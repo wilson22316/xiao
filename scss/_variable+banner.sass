@@ -1,0 +1,123 @@
+// color
+$color__main--blue: #196BB4
+$color__main--green: #00B688
+
+$color__sub--blue: #4588C7
+$color__sub--paleblue: #EBF2F8
+$color__sub--green: #329B74
+
+$color__hint: #FF5959
+
+$color__grayscale--black: #333333
+$color__grayscale--bold: #4D4D4D
+$color__grayscale--medium: #999999
+$color__grayscale--light: #D3D3D3
+$color__grayscale---thin: #F2F2F2
+
+// font-family
+$font-family--chi: "Microsoft Jhenghei"
+$font-family--eng: "Myriad Pro"
+
+// font-size
+@mixin title__main
+    font:
+        weight: 600
+        size: 30px
+    letter-spacing: 4px
+
+@mixin title__main--english
+    font:
+        weight: 700
+        size: 36px
+    letter-spacing: 5px
+    color: $color__grayscale--black
+
+@mixin title__sub
+    font:
+        weight: 600
+        size: 20px
+    letter-spacing: 2px
+
+// 最小文字
+@mixin title__sub--english
+    font:
+        weight: 400
+        size: 13px
+        letter-spacing: 0
+
+@mixin text__content
+    font:
+        weight: 400
+        size: 14px
+    line-height: 150%
+    letter-spacing: 2px
+
+// flex-funtion
+@mixin flex($flex-direction,$justify-content,$align-items)
+    display: flex
+    flex-direction: $flex-direction
+    justify-content: $justify-content
+    align-items: $align-items
+
+// size-attribution
+@mixin size($width,$height)
+    width: $width
+    height: $height
+
+// banner-size
+@mixin banner($height,$position)
+    background-attachment: inherit
+    height: $height
+    background-position: 100% $position
+    background-size: cover
+
+.banner
+    background: url(https://www.kobayashi.com.tw/images/profession/banner_img.jpg) no-repeat
+    background-size: cover
+    overflow: hidden
+    background-attachment: fixed
+    background-size: 100% auto
+    background-position: 100% 0%
+    height: 300px
+    margin: 80px 0 0
+    +flex(column,center,center)
+
+    &__title
+        +title__main--english
+
+    &__subtitle
+        +text__content
+        margin-top: 8px
+
+@media (max-width: 1500px) and (min-width: 1350px)
+    .banner
+        height: 300px
+@media (max-width: 1349px) and (min-width: 1024px)
+    .banner
+        +banner(250px,38%)
+@media (max-width: 1023px) and (min-width: 960px)
+    .banner
+        +banner(250px,30%)
+@media (max-width: 959px)and (min-width: 700px)
+    .banner
+        +banner(200px,38%)
+@media (max-width:960px)
+    .banner
+        margin-top: 60px
+@media (max-width:700px)
+    .banner
+        +banner(160px,25%)
+@media (min-width:961px)
+    .pc--none
+        display: none
+
+@media (max-width:960px)
+    .mb--none
+        display: none
+
+    .banner
+        margin-top: 60px
+
+@media (max-width:700px)
+    .banner
+        +banner(160px,25%)

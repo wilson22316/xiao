@@ -1,0 +1,278 @@
+@import ./integrate
+@import ./_breadcrumbs
+@import './footer'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Microsoft JhengHei
+
+html 
+    overflow: scroll
+
+::-webkit-scrollbar 
+    width: 0px
+    background: transparent
+     /* make scrollbar transparent */
+
+.banner
+    background: url(https://www.kobayashi.com.tw/images/contact/banner_img.jpg)
+    // background-attachment: fixed
+    // background-size: 100% auto
+    // height: 390px
+    // width: 100%
+    // padding-top: 170px
+    // &__title
+    //     margin: 0 auto
+    //     font-size: 58px
+    //     letter-spacing: 5px
+    //     text-align: center
+    //     color: #333
+    //     font-weight: 600
+    // &__subtitle
+    //     margin: 0 auto
+    //     text-align: center
+
+body
+    background: #e3e3e3
+.contact
+    background: white
+    width: 1080px
+    margin: 0 auto
+    padding: 50px 0px
+    .warn
+        background: #e3e3e3
+        width: calc( 100% - 100px )
+        margin: 0 auto 40px
+        padding: 40px
+        display: flex
+        &__icon
+            font-size: 35px
+            height: 80px
+            width: 80px
+            border-radius: 50%
+            color: white
+            background: #FC798F
+            text-align: center
+            line-height: 80px
+            font-weight: 100
+        &__message
+            margin-left: 40px
+            font-size: 13px
+            color: #666
+            line-height: 23px
+            &--hint
+                color: #fe5959
+    .form
+        .formblock
+            display: flex
+            justify-content: space-between
+            width: calc( 100% - 100px )
+            padding: 30px 60px
+            border-top: 1px solid #dedede
+            margin: 0 auto
+            &--head
+                border-top: 1px dotted #dedede
+            &--button
+                border-top: 1px solid #dedede00
+            &__tag
+                color: #666
+                font-size: 15px
+                text-align: center
+                line-height: 30px
+                letter-spacing: 2px
+                position: relative
+            &__input
+                width: 750px
+            &__textblock
+                border: 1px solid #e3e3e3
+                height: 30px
+                padding: 0 5px
+                color: #666
+                font-size: 16px
+                width: 100%
+                &--select
+                    display: flex
+                    padding: 0
+                    border: none
+                    justify-content: space-between
+                &--message
+                    height: 210px
+                    resize: none
+                    padding: 5px
+            &__validation
+                margin-left: 10px
+                margin-top: 3px
+                letter-spacing: 2px
+                font-size: 11px
+                line-height: 23px
+                color: #FC798F
+            &__required
+                display: none
+                &--active
+                    display: block
+            &__errorhint
+                display: none
+                &--active
+                    display: block
+            &__select
+                -webkit-appearance: none
+                border: 1px solid #e3e3e3
+                height: 30px
+                width: 100%
+                padding: 0 0 0 5px
+                font-size: 14px
+                color: #666
+                letter-spacing: 1px
+                cursor: pointer
+                &::-webkit-scrollbar
+                    display: none
+                &--blocktwo
+                    width: calc( 98%/2 )
+                &--blockthree
+                    width: calc( 96%/3 )
+            &__radio
+                display: flex
+                width: 750px
+                label
+                    display: inline-block
+                    margin: 0 40px 0 10px
+                    line-height: 30px
+                    color: #666
+                    font-size: 15px
+                    letter-spacing: 2px
+            &__button
+                width: 49%
+                color: gray
+                background: #787878
+                border: none
+                color: white
+                padding: 12px 0
+                &--submit
+                    background: #343434
+        &__sign--arrow
+            display: flex
+            width: 80px
+            height: 30px
+            position: absolute
+            left: 50px
+            top: 7px
+            animation: arrow 1s ease-out infinite
+            div
+                width: 11px
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%)
+                background: #5282C2
+                height: 15px
+    
+@keyframes arrow
+    0%, 100%
+        left: 145px
+    50%
+        left: 150px
+
+@media (min-width: 1500.1px) and (max-width: 1680px)
+    // .banner
+    //     height: 390px
+
+@media (min-width: 1350.1px) and (max-width: 1500px)
+    // .banner
+    //     height: 300px
+    //     padding-top: 135px
+    //     &__title
+    //         font-size: 45px
+    .contact
+        width: 880px
+        padding: 40px 0px
+        .form
+            .formblock
+                padding: 30px 40px
+                width: calc( 100% - 80px )
+                &__input
+                    width: 600px
+
+@media (min-width: 960.1px) and (max-width: 1350px)
+    // .banner
+    //     height: 250px
+    //     padding-top: 100px
+    //     &__title
+    //         font-size: 40px
+    .contact
+        width: 880px
+        padding: 40px 0px
+        .form
+            .formblock
+                padding: 30px 40px
+                width: calc( 100% - 80px )
+                &__input
+                    width: 600px
+
+@media (min-width: 700.1px) and (max-width: 960px)
+    // .banner
+    //     height: 200px
+    //     padding-top: 80px
+    //     &__title
+    //         font-size: 30px
+    .contact
+        width: 680px
+        padding: 40px 0px
+        .form
+            .formblock
+                padding: 30px 40px
+                width: calc( 100% - 80px )
+                &__input
+                    width: 400px
+    .footer
+        background-color:#E3E3E3
+        
+@media (max-width: 700px)
+    // .banner
+    //     height: 160px
+    //     padding-top: 60px
+    //     &__title
+    //         margin: 0 auto
+    //         font-size: 20px
+    //         letter-spacing: 3px
+    //         text-align: center
+    //         &__subtitle
+    //             margin-top: 5px
+    //             p
+    //                 font-size: 10px
+    .contact
+        width: 95%
+        padding: 40px 0px
+        .warn
+            margin: 0 auto 20px
+            padding: 20px
+            width: calc( 100% - 50px )
+            &__icon
+                font-size: 16px
+                height: 35px
+                width: 35px
+                border-radius: 45px
+                line-height: 35px
+            &__message
+                font-size: 12px
+                margin-left: 20px
+                width: calc( 100% - 65px )
+                line-height: 20px
+        .form
+            .formblock
+                flex-direction: column
+                justify-content: start
+                align-items: start
+                padding: 13px 13px
+                width: calc( 100% - 80px )
+                &__input
+                    width: 100%
+                &__radio
+                    width: 100%
+                &__button
+                    width: 100%
+                    padding: 14px 0
+                    &--submit
+                        margin-bottom: 10px
+                &--button
+                    flex-direction: column-reverse
+    .footer
+        background-color:#E3E3E3

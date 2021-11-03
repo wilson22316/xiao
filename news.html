@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="css/news.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="header__mobileBtn pc--none">
+            <i class="fas fa-bars icon--header"></i>
+        </div>
+
+        <nav class="mainmenu">
+            <a class="menu__logo" href="index.html">
+                <img class="logo" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+            </a>
+            <ul class="mainmenu__list mb--none">
+                <li class="menu__item menu__item--shop">
+                    <a href="catalog__product.html" class="menu__link menu__link--red menu__link--shop">網路商店</a>
+                    <div class="dropdown dropdown--row">
+                        <ul class="dropdownlist">
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-glasses dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">光學鏡框</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(透明)</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-carrot dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">保健食品</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-sun dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">太陽眼鏡</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(彩色)</a>
+                            </li>
+                        </ul>
+
+                        <a class="dropdownitem__img" href="">
+                            <img class="img" src="https://www.kobayashi.com.tw/upload/banner_menu/6143ef0bef211.jpg"
+                                alt="">
+                            <p>KUKKA花兒 最新活動</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--classroom">
+                    <a href="classroom.html" class="menu__link menu__link--classroom">專業教室</a>
+                    <div class="menulist menulist--column">
+                        <ul class="menu__list">
+                            <li class="menulist__item">
+                                <a href="">視力保健教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡框教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">多焦鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">濾藍光鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">隱形眼鏡教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">太陽眼鏡教室</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <a href="" class="menu__link">門市查詢</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="news.html" class="menu__link">最新消息</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="customer.html" class="menu__link">顧客服務</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">聯絡小林</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="submenu">
+            <a class="submenu__item--search mb--none" href="">
+                <i class="fas fa-search icon--header icon--black icon--sm"></i>
+                <p class="text--dark">
+                    全站搜尋
+                    <br>
+                    <span class="text--en">SEARCH</span>
+                </p>
+            </a>
+            <a class="submenu__item--member mb--none" href="">
+                <i class="far fa-user icon--header"></i>
+                <span class="text--white">會員中心</span>
+            </a>
+            <a class="submenu__item--cart" href="">
+                <i class="fas fa-shopping-cart icon--header"></i>
+                <span class="text--white mb--none">預訂區</span>
+            </a>
+        </div>
+
+        <div class="header__mobileMenu pc--none">
+            <form action="" class="searchBar">
+                <input class="searchBar__input" type="text" placeholder="請輸入關鍵字">
+                <div class="searchBar__cancel"></div>
+            </form>
+            <nav class="mobileMenu">
+                <a class="btn btn--main btn--signin" href="">登入/註冊</a>
+                <ul class="mobilemenu--column ">
+                    <li class="menu__item--block ">
+                        <a class="menu__link--block" href="">會員中心</a>
+                    </li>
+                    <li class="menu__item--block menu__item--sub">
+                        <p class="menu__link--block menu--have-sub">網路商店</p>
+                        <ul class="menu--sub menu--column">
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">光學眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">太陽眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(透明)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(彩色)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">保健食品/其他</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">門市查詢</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">最新消息</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">顧客專區</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">專業教室</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">關於小林</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">人才招募</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="socialIcon">
+                <div class="socialIcon__download">
+                    <a class="icon-google" href="">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/google.png" alt="">
+                    </a>
+                    <a href="" class="icon-apple">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/ios.png" alt="">
+                    </a>
+                </div>
+                <div class="socialIcon__links">
+                    <a href="" class="icon-ig">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                    </a>
+                    <a href="" class="icon-fb">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                    </a>
+                    <a href="" class="icon-yt">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-box">
+        <div class="Empty-block"></div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__item"><a href="/index.html"><i class="fas fa-home"></i></a></div>
+            <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="breadcrumbs__item">
+                <a href=""><p>最新消息</p></a>
+            </div>
+        </div>
+        <div class="container__new">
+            <div class="container1">
+                <div class="button_area">
+                    <button class="button_box BtnArticle Btn-Target">全部文章</button>
+                    <button class="button_box BtnPopular">熱門活動</button>
+                    <button class="button_box BtnRecent">近期活動</button>
+
+                    <!-- <label class="button_box Btn-Target" for="all_Article">全部文章</label>
+                    <label class="button_box" for="Popular">熱門活動</label>
+                    <label class="button_box" for="Recent">近期活動</label> -->
+                </div>
+            </div>
+            <div class="container2 pages1 dp-block">
+                <!-- <input type="radio" id="all_Article" name="tab" checked> -->
+                <div class="member_article open1 formBlock">
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/611e0b4dadf89.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/611c719dcf901.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/60dc3b09403f0.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/60b835c7bb91d.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/612dc2dfc9885.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/605d529ed6430.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/601c9ff2931fc.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/612dc2b2b1f2e.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container2 pages2">
+                <!-- <input type="radio" id="Popular" name="tab"> -->
+                <div class="member_article open2 formBlock">
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/611e0b4dadf89.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/611c719dcf901.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/60dc3b09403f0.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/60b835c7bb91d.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/612dc2dfc9885.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/605d529ed6430.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/612dc2dfc9885.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container2 pages3">
+                <!-- <input type="radio" id="Recent" name="tab"> -->
+                <div class="member_article open3 formBlock">
+                    <div class="card-item">
+                        <div class="img-box">
+                            <img class="card__cover" src="https://www.kobayashi.com.tw/upload/news/601c9ff2931fc.jpg"
+                                alt="">
+                            <div class="cover cover-text cover-text2" id="cover-text">
+                                <div class="cover__icon">
+                                    <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200"
+                                        style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="70.524" y1="52.578" x2="130.335" y2="52.578"></line>
+                                        <path style="fill:#F3CA21;"
+                                            d="M154.705,70.434c0,3.129-2.537,5.666-5.667,5.666H51.872c-3.13,0-5.667-2.537-5.667-5.666l0,0
+                                                    c0-3.13,2.537-5.667,5.667-5.667h97.166C152.168,64.767,154.705,67.304,154.705,70.434L154.705,70.434z">
+                                        </path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="66.16" y1="66.73" x2="66.16" y2="51.778"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="134.443" y1="66.73" x2="134.443" y2="51.778"></line>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            d="M139.926,57.012h16.946
+                                                    c0,0,3.489,0.747,3.489,3.987c0,3.239,0,82.488,0,82.488s0.248,4.734-2.991,4.734s-113.39,0-113.39,0s-3.987,0-4.236-1.993
+                                                    c-0.249-1.994,0-84.731,0-84.731s0.25-3.987,3.738-4.485s16.946,0,16.946,0">
+                                        </path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M60.068,63.371v6.527c0,0,0.66,1.852,5.645,1.852
+                                                    s5.609-2.133,5.609-2.133v-6.246"></path>
+                                        <path style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;" d="M140.07,63.371v6.906c0,0-0.66,1.852-5.645,1.852
+                                                    s-5.609-2.133-5.609-2.133v-6.625"></path>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="39.689" y1="82.934" x2="160.361" y2="82.934"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="93.767" x2="74.205" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="93.767" x2="91.705" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="93.767" x2="109.038" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="93.767" x2="126.538" y2="109.267"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="74.205" y1="122.1" x2="74.205" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="91.705" y1="122.1" x2="91.705" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="109.038" y1="122.1" x2="109.038" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="126.538" y1="122.1" x2="126.538" y2="137.6"></line>
+                                        <line style="fill:none;stroke:#344154;stroke-width:3;stroke-miterlimit:10;"
+                                            x1="63.205" y1="116.1" x2="137.372" y2="116.1"></line>
+                                    </svg>
+                                    <p>更多細節介紹</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <span class="card__content-data text-2">
+                                2021.08.20
+                            </span>
+                            <div class="card-title">
+                                <span>
+                                    小林眼鏡X Duncan當肯 聯名鏡框搞怪登...
+                                </span>
+                            </div>
+                            <div class="card__content-icon">
+                                <i class="fa fa-bullhorn icon-text"></i>
+                            </div>
+                            <!-- <i class="fa fa-bullhorn card__content-icon"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__map">
+            <div class="align-center map_mb">
+                <a href="" class="map__logo">
+                    <img class="maplogo__image" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+                </a>
+                <span class="map__title ml8 mb-none">因為用心 所以更好</span>
+            </div>
+            <ul class="maplist mb-none">
+                <li class="list__item--sm maplist__item"><a href="">關於小林</a></li>
+                <li class="list__item--sm maplist__item"><a href="">About Us</a></li>
+                <li class="list__item--sm maplist__item"><a href="">人才招募</a></li>
+                <li class="list__item--sm maplist__item"><a href="">網站地圖</a></li>
+            </ul>
+            <div class="align-center map_mb--r">
+                <span class="map_app mb-none">小林眼鏡 APP下載</span>
+                <div class="mapapp__box">
+                    <a class="mapapp__app"
+                        href="https://play.google.com/store/apps/details?id=tw.com.kobayashi.app&hl=zh_TW">
+                        <img src="https://www.kobayashi.com.tw/images/google.png" alt="Google Play">
+                    </a>
+                    <a class="mapapp__app"
+                        href="https://itunes.apple.com/tw/app/%E5%B0%8F%E6%9E%97%E7%9C%BC%E9%8F%A1/id1081723764?mt=8">
+                        <img src="https://www.kobayashi.com.tw/images/ios.png" alt="Apple Store">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="footer__sub">
+            <div class="footer__media socialIcon__links footer__sub--item">
+                <a href="" class="icon-ig">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                </a>
+                <a href="" class="icon-fb">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                </a>
+                <a href="" class="icon-yt">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                </a>
+            </div>
+            <ul class="footer_info footer__text text-center">
+                <li class="list__item--sm">台北市南港路二段97號7樓</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">電話：(02)2651-3858</li>
+                <li class="list__item--sm">傳真：(02)2651-3878</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">免費服務電話：0800-016-883</li>
+            </ul>
+            <div class="line-h">
+                <p class="list__item--sm text-center border-none bodr-n">7F., No.97, Sec. 2, Nangang Rd., Nangang Dist.,
+                    <br class="pc-none">
+                    Taipei City 115,Taiwan (R.O.C)
+                </p>
+            </div>
+            <ul>
+                <a href="#" class="list__item--sm">退患或通知</a>
+                <a href="#" class="list__item--sm">使用條款</a>
+                <a href="#" class="list__item--sm">隱私權政策</a>
+            </ul>
+            <p class="copyright">
+                Copyright © 2017 Kobayashi Optical Co.,Ltd.
+                <span class="bold">
+                    DESIGN BY BEGONIA
+                </span>
+            </p>
+        </nav>
+
+        <div class="top-btn">
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://www.kobayashi.com.tw/images/top.png" alt="">
+            </a>
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/caas-media-storage/upload/photos/user-upload-photo/b282b804-525a-44ab-870b-554f6ec8593e-f6bdda852d174602bf73d9c2e63203b8.png"
+                    alt="">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        $(".BtnArticle").on("click", function () {
+            $(this).addClass("Btn-Target").siblings().removeClass("Btn-Target");
+            $(".pages1").addClass("dp-block").siblings().removeClass("dp-block");
+        });
+
+        $(".BtnPopular").on("click", function () {
+            $(this).addClass("Btn-Target").siblings().removeClass("Btn-Target");
+            $(".pages2").addClass("dp-block").siblings().removeClass("dp-block");
+        });
+
+        $(".BtnRecent").on("click", function () {
+            $(this).addClass("Btn-Target").siblings().removeClass("Btn-Target");
+            $(".pages3").addClass("dp-block").siblings().removeClass("dp-block");
+        });
+    </script>
+
+    <script src="js/header.js"></script>
+</body>
+
+</html>

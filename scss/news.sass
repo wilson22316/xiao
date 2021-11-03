@@ -1,0 +1,210 @@
+// 引入檔案
+// 清除預設值
+@import '_resets'
+// 變數設定
+// @import '_varmenu'
+// header區域設定
+@import '_header'
+// footer區域設定
+@import 'footer'
+// 麵包屑區域
+@import '_breadcrumbs'
+// banner區域
+// @import '_variable+banner'
+
+
+// 空區塊
+.Empty-block
+    max-width: 100%
+    height: 80px
+
+// 介面切換按鈕
+.container__new
+    width: 100%
+    .container1
+        width: 50%
+        background-color: #fff
+        margin: 0 auto
+        padding: 50px 0
+        .button_area
+            display: flex
+            width: 100%
+            .button_box
+                width: calc((100% / 3) - 2px)
+                border: 1px solid #ccc
+                text-align: center
+                background: #fff
+                transition: 0.5s
+                cursor: pointer
+                position: relative
+                font-size: size(title__sub)
+                flex: 1
+                padding: 16px 0       
+            .Btn-Target
+                border: 1px solid $grayscale__color3
+                background: $grayscale__color3
+                color: #fff            
+         
+// 卡片區
+.container2
+    width: 80vw
+    margin: 5rem auto 
+    display: none
+    .member_article
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 30px
+        width: 100%
+        justify-items: center
+        .card-item
+            border: 1px solid #ccc
+            cursor: pointer
+            .img-box
+                position: relative
+                width: 100%
+                .cover
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    opacity: 0
+                    background: rgba(223, 224, 226, 0.95)
+                    transition: 0.5s
+                    .cover__icon
+                        width: 80px
+                        margin: 24% auto
+                        p
+                            font-size: size(title__sub--english)
+                            color: #344154
+            .card__content
+                padding: 40px 20px
+                letter-spacing: 1px
+                position: relative
+                height: 250px
+                .card__content-data
+                    // color: $minor-color3
+                    font-size: size(text__content)
+                    font-weight: welght(title__sub--english)
+                    display: block
+                    position: relative
+                    margin: 15px 0    
+                .card__content-icon
+                    content: ''
+                    display: inline-block
+                    position: absolute
+                    top: 0
+                    right: 20px
+                    +box-size(60px,60px)
+                    background-color: #e7e7e7
+                    border-radius: 50%
+                    transform: translateY(-50%)
+                    color: #005bac
+                    i
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 100%
+                        height: 100%
+                        border-radius: 50%
+
+               
+// hover
+.card-item:hover .text-2:after
+    width: 100%
+
+.card-item:hover .icon-text
+    color: #fff
+    background-color: #005bac
+
+.card-item:hover #cover-text
+    opacity: 1
+
+// 底線動畫設定
+// 字體寬度
+// .text-1
+//     background-image: linear-gradient(#ffc219, #ffc219)
+//     background-position: 0px 10px
+//     background-size: 0 2px
+//     background-repeat: no-repeat
+//     transition: background-size 0.5s
+//     &:hover
+//         background-size: 100% 2px
+
+.text-2::after
+    content: ''
+    display: block
+    width: 40px
+    height: 3px
+    position: absolute
+    left: 0
+    bottom: -15px
+    background: #ffc219
+    transition: 0.5s 
+   
+
+.icon-p-right
+    color: #9999
+    
+// 顯示開關
+.dp-block
+    display: block
+
+// input[type="radio"],.formBlock
+//     display: none
+
+// input[type="radio"]:checked + div
+//     display: block
+
+
+
+// 圖片
+.card__cover
+    width: 100%
+    height: auto
+    
+
+// rwd錨點定位
+@media ( min-width: 1700px)
+    .member_article
+        grid-template-columns: repeat(3,1fr) 
+
+@media (min-width:961px)
+    .pc--none
+        display: none
+
+@media (max-width:960px)
+    .mb--none
+        display: none
+
+@media ( max-width: 1200px)
+    .container__new
+        width: 100%
+        .container2
+            width: 100%
+            .member_article
+                        grid-template-columns: repeat(2,1fr)
+
+
+@media (max-width: 768px)
+    .Empty-block
+        height: 60px
+    
+    .container__new
+        width: 90%
+        margin: 0 auto
+        .container1
+            width: 90%
+            margin: 0 auto
+            padding-bottom: 20px
+        
+        .container2
+            width: 100%
+            margin-top: 0
+            .member_article
+                grid-template-columns: repeat(1,1fr)
+                .card-item
+                    .card__content
+                        height: 200px
+                    
+   

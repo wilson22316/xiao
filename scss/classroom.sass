@@ -1,0 +1,271 @@
+@import reset
+@import header
+@import variable+banner
+@import breadcrumbs
+
+body
+    box-sizing: border-box
+
+a,a:hover
+    text-decoration: none
+    color: $color__grayscale--bold
+
+// =============================
+.prologue__box
+    background: #e3e3e3
+    +flex(column,center,center)
+    padding: 50px 0
+
+.prologue
+    background: #fff
+    +size(880px,316px)
+    margin: 30px 0
+
+    &__image
+        +size(420px,300px)
+
+    &__imagebox--left
+        +size(420px,100%)
+        float: left
+
+    &__imagebox--right
+        +size(420px,100%)
+        float: right
+
+    &__textbox
+        +size(calc(100% - 420px - 60px),186px)
+        margin: 65px 0 65px 60px
+        +flex(column,space-between,flex-start)
+
+    &__title
+        color: $color__grayscale--black
+        padding-bottom: 15px
+        border-bottom: 1px solid #ccc
+        font-weight: 600
+        &box
+            display: flex
+            justify-content: flex-start
+
+    &__subtitle
+        &--blue,&--green
+            color: #3e74b9
+            font-weight: 600
+            margin-left: 15px
+        &--green
+            color: $color__main--green
+    p
+        font-size: 20px
+        font-weight: 600
+
+    &__button
+        text-align: center
+        background: #4c4c4c
+        color: #fff
+        border: 0
+        +size(144px,42px)
+        padding: 12px
+        cursor: pointer
+        margin-top: 20px
+
+// =============================
+.lesson__box
+    width: 880px
+    margin: 0 auto
+    +flex(row,flex-start,flex-start)
+
+.lesson
+    width: 580px
+    border-right: 1px solid $color__grayscale--light
+    padding-right: 5%
+
+    &__bigtitle
+        +title__main
+        margin: 10px 0
+        margin-left: -15px
+        padding-top: 50px
+
+    &__title
+        font-size: 16px
+        margin: 16px 0 16px 0
+        padding-top: 16px
+        font-weight: 600
+
+    &__subtitle
+        +text__content
+        margin: 15px 0
+        color: $color__main--green
+
+    &__content,&__list
+        +text__content
+        margin: 16px 0
+        line-height: 24px
+
+    &__list
+        margin-left: 24px
+
+.oblique＿line
+    width: 105%
+    margin-left: -15px
+
+.line
+    height: 1px
+    width: 105%
+    margin-left: -15px
+    background: $color__grayscale--light
+
+.sidebar
+    width: 300px
+    span
+        color: $color__grayscale--medium
+
+    .sidebar__title,.sidebar__anchor--content
+        color: $color__grayscale--black
+        padding-left: 20px
+
+    .sidebar__title
+        font-size: 18px
+        font-weight: 600
+        margin: 60px 0 20px 5px
+
+    .sidebar__anchor
+        border-top: 1px solid $color__grayscale--light
+        height: 56px
+
+    .sidebar__anchor--content
+        line-height: 46px
+        +flex(row,space-between,center)
+        margin: 5px 0 5px 5px
+        cursor: pointer
+
+        &:hover
+            transition: .3s
+            background: $color__main--blue
+            color: #fff
+
+            .icon
+                color: #fff
+
+.sidebar--fixed
+    position: fixed
+    top: 40px
+    margin-left: 580px
+
+// =============================
+@media (max-width:960px)
+    .prologue
+        +size(680px,500px)
+        margin: 15px 0
+        position: relative
+
+        &__image
+            +size(100%,100%)
+            opacity: .3
+
+        &__imagebox--left,&__imagebox--right
+            +size(680px,500px)
+
+        &__textbox
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            +size(400px,180px)
+            +flex(column,space-between,flex-start)
+            margin: 0
+
+    .lesson__box
+        width: 680px
+
+    .lesson
+        width: 400px
+
+    .sidebar
+        width: 280px
+
+        &--fixed
+            margin-left: 400px
+
+@media (max-width:700px)
+    .title__main--english
+        font-size: 25px
+
+    .breadcrumbs
+        height: 54px
+        padding: 0 15px
+
+    .prologue__box
+        padding: 0
+
+    .prologue
+        +size(96vw,665px)
+        margin: 15px 0
+
+        &__image
+            +size(100%,100%)
+            opacity: 1
+
+        &__imagebox--left,&__imagebox--right
+            +size(96vw,65%)
+            float: none
+
+        &__textbox
+            +size(84vw,500px-250px)
+            +flex(column,space-between,center)
+            margin-top: 200px
+
+        &__title
+            padding: 10px 0
+            margin-left: 0
+            display: block
+            width: 84vw
+            text-align: center
+
+            &box
+                flex-direction: column
+                justify-content: flex-start
+                align-items: center
+
+        &__subtitle
+            &--blue,&--green
+                padding: 10px 0
+                margin-left: 0
+
+        &__button
+            +size(84vw,42px)
+            font-size: 13px
+            margin-bottom: 30px
+
+    .lesson__box
+        width: 86vw
+        margin-left: 7vw
+
+    .lesson
+        width: 100%
+        padding: 0
+        border: none
+
+        &__bigtitle
+            font-size: 20px
+
+    .sidebar
+        display: none
+
+    .lesson__bigtitle,.oblique＿line,.line
+        margin-left: -10px
+
+@media (max-width:500px)
+    .prologue
+        +size(345px,500px)
+
+        &__imagebox--left,&__imagebox--right
+            +size(345px,250px)
+
+        &__textbox
+            +size(345px,500px-250px)
+            margin-top: 120px
+
+        &__title
+            width: 285px
+
+        &__button
+            +size(285px,42px)

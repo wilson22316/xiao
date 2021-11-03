@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <title>顧客專區</title>
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="header__mobileBtn pc--none">
+            <i class="fas fa-bars icon--header"></i>
+        </div>
+
+        <nav class="mainmenu">
+            <a class="menu__logo" href="index.html">
+                <img class="logo" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+            </a>
+            <ul class="mainmenu__list mb--none">
+                <li class="menu__item menu__item--shop">
+                    <a href="catalog__product.html" class="menu__link menu__link--red menu__link--shop">網路商店</a>
+                    <div class="dropdown dropdown--row">
+                        <ul class="dropdownlist">
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-glasses dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">光學鏡框</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(透明)</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-carrot dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">保健食品</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-sun dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">太陽眼鏡</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(彩色)</a>
+                            </li>
+                        </ul>
+
+                        <a class="dropdownitem__img" href="">
+                            <img class="img" src="https://www.kobayashi.com.tw/upload/banner_menu/6143ef0bef211.jpg"
+                                alt="">
+                            <p>KUKKA花兒 最新活動</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--classroom">
+                    <a href="classroom.html" class="menu__link menu__link--classroom">專業教室</a>
+                    <div class="menulist menulist--column">
+                        <ul class="menu__list">
+                            <li class="menulist__item">
+                                <a href="">視力保健教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡框教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">多焦鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">濾藍光鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">隱形眼鏡教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">太陽眼鏡教室</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <a href="" class="menu__link">門市查詢</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="news.html" class="menu__link">最新消息</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="customer.html" class="menu__link">顧客服務</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">聯絡小林</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="submenu">
+            <a class="submenu__item--search mb--none" href="">
+                <i class="fas fa-search icon--header icon--black icon--sm"></i>
+                <p class="text--dark">
+                    全站搜尋
+                    <br>
+                    <span class="text--en">SEARCH</span>
+                </p>
+            </a>
+            <a class="submenu__item--member mb--none" href="">
+                <i class="far fa-user icon--header"></i>
+                <span class="text--white">會員中心</span>
+            </a>
+            <a class="submenu__item--cart" href="">
+                <i class="fas fa-shopping-cart icon--header"></i>
+                <span class="text--white mb--none">預訂區</span>
+            </a>
+        </div>
+
+        <div class="header__mobileMenu pc--none">
+            <form action="" class="searchBar">
+                <input class="searchBar__input" type="text" placeholder="請輸入關鍵字">
+                <div class="searchBar__cancel"></div>
+            </form>
+            <nav class="mobileMenu">
+                <a class="btn btn--main btn--signin" href="">登入/註冊</a>
+                <ul class="mobilemenu--column ">
+                    <li class="menu__item--block ">
+                        <a class="menu__link--block" href="">會員中心</a>
+                    </li>
+                    <li class="menu__item--block menu__item--sub">
+                        <p class="menu__link--block menu--have-sub">網路商店</p>
+                        <ul class="menu--sub menu--column">
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">光學眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">太陽眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(透明)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(彩色)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">保健食品/其他</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">門市查詢</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">最新消息</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">顧客專區</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">專業教室</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">關於小林</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">人才招募</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="socialIcon">
+                <div class="socialIcon__download">
+                    <a class="icon-google" href="">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/google.png" alt="">
+                    </a>
+                    <a href="" class="icon-apple">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/ios.png" alt="">
+                    </a>
+                </div>
+                <div class="socialIcon__links">
+                    <a href="" class="icon-ig">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                    </a>
+                    <a href="" class="icon-fb">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                    </a>
+                    <a href="" class="icon-yt">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <div class="banner">
+        <p class="banner__title">CUSTOMER</p>
+        <p class="banner__subtitle">顧客專區</p>
+    </div>
+
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__item"><a href="/index.html"><i class="fas fa-home"></i></a></div>
+        <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="breadcrumbs__item">
+            <a href=""><p>顧客專區</p></a>
+        </div>
+    </div>
+
+    <div class="content2 Customer">
+        <div class="customer-center grid-container">
+            <a class="customer_box grid-item item1" href="#">
+                <div class="hover-box1"></div>
+                <div class="center-left">
+                    <p class="title-en">MEMBER CARD</p>
+                    <P class="title-ch">會員卡</P>
+                    <div>
+                        <P class="more-box">MORE +</P>
+                    </div>
+                </div>
+                <div class="center-right">
+                    <svg class="icon-lg1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+                        <path style="fill:#fff;stroke:#009B75;stroke-width:2;stroke-miterlimit:10;" d="M69.999,135.004c-35.9,0-65.004-29.104-65.004-65.004S34.099,4.996,69.999,4.996"></path>
+                            <path style="fill:#fff;stroke:#0D76C6;stroke-width:2;stroke-miterlimit:10;" d="M69.999,4.996C105.9,4.996,135.004,34.1,135.004,70s-29.104,65.004-65.005,65.004"></path>
+                            <line style="fill:none;stroke:#FFC424;stroke-width:3;stroke-miterlimit:10;" x1="50.217" y1="84.022" x2="100.979" y2="84.022"></line>
+                            <line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" x1="50.217" y1="86.022" x2="100.979" y2="86.022"></line>
+                            <path style="fill:none;stroke:#314252;stroke-width:1;stroke-miterlimit:10;" d="M42.105,49.87c0,0-2.534,0.08-2.534,2.693s-0.04,25.657-0.04,25.657s0,2.612,2.653,2.612c1.663,0,45.496-0.037,45.496-0.037s2.612,0.038,2.612-2.576c0-1.703,0-25.656,0-25.656s0.04-2.654-2.731-2.693S42.105,49.87,42.105,49.87z"></path>
+                            <path style="fill:none;stroke:#314252;stroke-width:1;stroke-miterlimit:10;" d="M50.23,80.939c-0.008,4.279-0.014,7.617-0.014,7.617s0,2.612,2.653,2.612c1.663,0,45.496-0.037,45.496-0.037s2.612,0.038,2.612-2.576c0-1.703,0-25.656,0-25.656s0.04-2.654-2.731-2.693c-0.695-0.01-3.903-0.015-8.319-0.017"></path>
+                            <circle style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" cx="48.636" cy="56.939" r="3.25"></circle>
+                            <path style="fill:#E7B429;" d="M53.351,59.422c0.52,0.354,1.299,0.634,1.976,0.634c1.796,0,3.251-1.455,3.251-3.25s-1.455-3.25-3.251-3.25c-0.743,0-1.428,0.25-1.976,0.67c0,0,0.883,1.014,0.883,2.714S53.351,59.422,53.351,59.422z"></path>
+                            <path style="fill:none;stroke:#314252;stroke-miterlimit:10;" d="M53.25,54.366c0.548-0.42,1.333-0.811,2.076-0.811c1.796,0,3.251,1.455,3.251,3.25s-1.455,3.25-3.251,3.25c-0.677,0-1.456-0.28-1.976-0.634"></path>
+                            <rect x="74.844" y="53.556" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="9.375" height="6.5"></rect>
+                            <line style="fill:#E7B429;stroke:#314252;stroke-width:2;stroke-miterlimit:10;" x1="44.781" y1="73.48" x2="51.656" y2="73.48"></line>
+                            <line style="fill:#E7B429;stroke:#314252;stroke-width:2;stroke-miterlimit:10;" x1="55.914" y1="73.48" x2="62.789" y2="73.48"></line>
+                            <line style="fill:#E7B429;stroke:#314252;stroke-width:2;stroke-miterlimit:10;" x1="66.562" y1="73.48" x2="73.437" y2="73.48"></line>
+                            <line style="fill:#E7B429;stroke:#314252;stroke-width:2;stroke-miterlimit:10;" x1="77.719" y1="73.48" x2="84.594" y2="73.48"></line>
+                    </svg>
+                </div>
+            </a>
+
+            <a class="customer_box grid-item item1" href="#">
+                <div class="hover-box1"></div>
+                <div class="center-left">
+                    <p class="title-en">GUARANTEE</p>
+                    <P class="title-ch">電子保證書</P>
+                    <div>
+                        <P class="more-box">MORE +</P>
+                    </div>
+                </div>
+                <div class="center-right">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+                        <path style="fill:#fff;stroke:#009B75;stroke-width:2;stroke-miterlimit:10;" d="M69.999,135.004c-35.9,0-65.004-29.104-65.004-65.004S34.099,4.996,69.999,4.996"></path>
+                            <path style="fill:#fff;stroke:#0D76C6;stroke-width:2;stroke-miterlimit:10;" d="M69.999,4.996C105.9,4.996,135.004,34.1,135.004,70s-29.104,65.004-65.005,65.004"></path>
+                            <polygon style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" points="66.453,59.439 69.999,52.523 73.453,59.439 80.12,60.273 75.12,65.356 76.62,73.106 69.999,68.856 63.12,73.106 65.453,65.439 59.453,60.106 		"></polygon>
+                            <path style="fill:none;stroke:#314252;stroke-miterlimit:10;" d="M52.627,63.609c-0.008-0.212-0.012-0.424-0.012-0.637c0-9.602,7.785-17.386,17.385-17.386c9.603,0,17.385,7.784,17.385,17.386"></path>
+                            <path style="fill:#FFC527;" d="M75.757,83.906l11.237,15.85l0.349-12.084l12.568,2.417L88.042,75.432c0,0-3.338,3.758-5.172,5.258"></path>
+                            <polyline style="fill:none;stroke:#314252;stroke-miterlimit:10;" points="75.757,83.906 86.994,99.756 87.343,87.672 99.911,90.089 89.744,77.506 "></polyline>
+                            <path style="fill:#FFC527;" d="M63.911,83.906l-11.237,15.85l-0.349-12.084l-12.568,2.417l11.869-14.657c0,0,3.338,3.758,5.172,5.258"></path>
+                            <polyline style="fill:none;stroke:#314252;stroke-miterlimit:10;" points="63.911,83.906 52.674,99.756 52.325,87.672 39.757,90.089 49.924,77.506 "></polyline>
+                            <circle style="fill:none;stroke:#314252;stroke-miterlimit:10;" cx="69.999" cy="62.482" r="22.208"></circle>
+                    </svg>
+                </div>
+            </a>
+
+            <a class="customer_box grid-item item1" href="#">
+                <div class="hover-box1"></div>
+                <div class="center-left">
+                    <p class="title-en">Q&A</p>
+                    <P class="title-ch">常見問題</P>
+                    <div>
+                        <P class="more-box">MORE +</P>
+                    </div>
+                </div>
+                <div class="center-right">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+                        <path style="fill:#fff;stroke:#009B75;stroke-width:2;stroke-miterlimit:10;" d="M69.999,135.004c-35.9,0-65.004-29.104-65.004-65.004S34.099,4.996,69.999,4.996"></path>
+                            <path style="fill:#fff;stroke:#0D76C6;stroke-width:2;stroke-miterlimit:10;" d="M69.999,4.996C105.9,4.996,135.004,34.1,135.004,70s-29.104,65.004-65.005,65.004"></path>
+                            <rect x="48.993" y="40.273" style="fill:none;stroke:#314252;stroke-miterlimit:10;" width="42.614" height="57.68"></rect>
+                            <path style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" d="M62.96,46.464v-8.453c0,0,0.119-0.882,0.841-0.882s12.941,0,12.941,0s0.84,0.001,0.881,0.882s0,8.453,0,8.453s-0.119,0.922-1.321,0.922s-1.362-0.802-1.362-0.802s-0.001-1.962-0.762-2.684c0,0-1.577-1.643-3.813-1.643s-3.919,1.603-3.919,1.603s-0.84,1-0.881,2.684c0,0-0.154,0.842-1.122,0.842C62.96,47.386,62.96,46.464,62.96,46.464z"></path>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="58.615" y1="60.791" x2="62.911" y2="56.453"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="58.615" y1="56.453" x2="62.911" y2="60.791"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="58.615" y1="82.355" x2="62.911" y2="78.018"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="58.615" y1="78.018" x2="62.911" y2="82.355"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="69.794" y1="58.622" x2="80.973" y2="58.622"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="69.794" y1="69.113" x2="80.973" y2="69.113"></line>
+                            <line style="fill:none;stroke:#314252;stroke-miterlimit:10;" x1="69.794" y1="80.187" x2="80.973" y2="80.187"></line>
+                            <polyline style="fill:none;stroke:#314252;stroke-miterlimit:10;" points="58.615,69.426 60.326,71.136 63.705,66.839 	"></polyline>
+                    </svg>
+                </div>
+            </a>
+
+            <a class="customer_box grid-item item1" href="#">
+                <div class="hover-box1"></div>
+                <div class="center-left">
+                    <p class="title-en">CONTACT</p>
+                    <P class="title-ch">聯絡我們</P>
+                    <div>
+                        <P class="more-box">MORE +</P>
+                    </div>
+                </div>
+                <div class="center-right">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+                        <path style="fill:#fff;stroke:#009B75;stroke-width:2;stroke-miterlimit:10;" d="M69.999,135.004c-35.9,0-65.004-29.104-65.004-65.004S34.099,4.996,69.999,4.996"></path>
+                            <path style="fill:#fff;stroke:#0D76C6;stroke-width:2;stroke-miterlimit:10;" d="M69.999,4.996C105.9,4.996,135.004,34.1,135.004,70s-29.104,65.004-65.005,65.004"></path>
+                            <path style="fill:none;stroke:#334153;stroke-miterlimit:10;" d="M39.944,60.105c0,0,2.584,14.584,14.584,25.75s24.916,13.75,24.916,13.75l6.084-6.25v-2.25l-9.5-9.584h-1.75l-4.917,5.167c0,0-0.749,0.75-1.833,0.75s-1.667-0.667-1.667-0.667l-13.75-13.833c0,0-1.249-1.167-0.083-2.5s4.333-4.333,4.333-4.333s2.416-1.751,0.083-4.334s-7.916-7.75-7.916-7.75s-1.75-0.834-2.667,0S39.944,60.105,39.944,60.105z"></path>
+                            <rect x="65.986" y="48.188" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="76.07" y="48.188" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="85.528" y="48.188" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="65.986" y="57.688" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="76.07" y="57.688" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="85.528" y="57.688" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="65.986" y="67.855" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="76.07" y="67.855" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                            <rect x="85.528" y="67.855" style="fill:#E7B429;stroke:#314252;stroke-miterlimit:10;" width="5.795" height="5.795"></rect>
+                    </svg>
+                </div>
+            </a>
+
+            
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav class="footer__map">
+            <div class="align-center map_mb">
+                <a href="" class="map__logo">
+                    <img class="maplogo__image" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+                </a>
+                <span class="map__title ml8 mb-none">因為用心 所以更好</span>
+            </div>
+            <ul class="maplist mb-none">
+                <li class="list__item--sm maplist__item"><a href="">關於小林</a></li>
+                <li class="list__item--sm maplist__item"><a href="">About Us</a></li>
+                <li class="list__item--sm maplist__item"><a href="">人才招募</a></li>
+                <li class="list__item--sm maplist__item"><a href="">網站地圖</a></li>
+            </ul>
+            <div class="align-center map_mb--r">
+                <span class="map_app mb-none">小林眼鏡 APP下載</span>
+                <div class="mapapp__box">
+                    <a class="mapapp__app" href="https://play.google.com/store/apps/details?id=tw.com.kobayashi.app&hl=zh_TW">
+                        <img src="https://www.kobayashi.com.tw/images/google.png" alt="Google Play">
+                    </a>
+                    <a class="mapapp__app" href="https://itunes.apple.com/tw/app/%E5%B0%8F%E6%9E%97%E7%9C%BC%E9%8F%A1/id1081723764?mt=8">
+                        <img src="https://www.kobayashi.com.tw/images/ios.png" alt="Apple Store">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="footer__sub">
+            <div class="footer__media socialIcon__links footer__sub--item">
+                <a href="" class="icon-ig">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                </a>
+                <a href="" class="icon-fb">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                </a>
+                <a href="" class="icon-yt">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                </a>
+            </div>
+            <ul class="footer_info footer__text text-center">
+                <li class="list__item--sm">台北市南港路二段97號7樓</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">電話：(02)2651-3858</li>
+                <li class="list__item--sm">傳真：(02)2651-3878</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">免費服務電話：0800-016-883</li>
+            </ul>
+            <div class="line-h">
+                <p class="list__item--sm text-center border-none bodr-n">7F., No.97, Sec. 2, Nangang Rd., Nangang Dist.,
+                <br class="pc-none">
+                Taipei City 115,Taiwan (R.O.C)
+                </p>
+            </div>
+            <ul>
+                <a href="#" class="list__item--sm">退患或通知</a>
+                <a href="#" class="list__item--sm">使用條款</a>
+                <a href="#" class="list__item--sm">隱私權政策</a>
+            </ul>
+            <p class="copyright">
+                Copyright © 2017 Kobayashi Optical Co.,Ltd.
+                <span class="bold">
+                     DESIGN BY BEGONIA
+                </span>
+            </p>
+        </nav>
+
+        <!-- 至頂按鈕區域 -->
+        <div class="top-btn">
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://www.kobayashi.com.tw/images/top.png" alt="">
+            </a>
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/caas-media-storage/upload/photos/user-upload-photo/b282b804-525a-44ab-870b-554f6ec8593e-f6bdda852d174602bf73d9c2e63203b8.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="js/header.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery(function ($) {
+                /* 手機選單開合 */
+                $(".header__mobileBtn").click(function () {
+                    $(".header__mobileMenu").addClass("open");
+                });
+                $(".searchBar__cancel").click(function () {
+                    $(".header__mobileMenu").removeClass("open");
+                });
+
+                // 手機第二選單開關
+                $(".menu--have-sub").click(function () {
+                    $(this).toggleClass("open");
+                    $('.menu--have-sub + .menu--sub').toggleClass("open");
+                });
+
+            });
+        });
+    </script>
+</body>
+</html>

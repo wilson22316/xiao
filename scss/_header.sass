@@ -1,0 +1,384 @@
+::-webkit-scrollbar
+    width: 0
+
+.menu
+    display: flex
+    position: fixed
+    top: 0
+    justify-content: space-between
+    width: 100vw
+    height: 80px
+    background: #fff
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+    // position: relative
+    z-index: 1000
+
+.mainmenu ul,.mobilemenu--column ol,ul
+    list-style: none
+
+.menu__logo
+    width: 150px
+    height: 24px
+    margin: auto 25px
+
+.logo
+    width: 100%
+
+.mainmenu,.submenu
+    display: inline-flex
+
+.mainmenu__list
+    display: flex
+    align-items: center
+
+.menu__item
+    border-left: 2px dotted #dedede
+    padding: 0 20px
+    font-weight: normal
+    transition: 0.5s
+
+.menu--sub
+    height: auto
+    max-height: 0
+    overflow: hidden
+    transition: 1s ease
+
+// 導覽列下底線變化
+.menu__link
+    position: relative
+
+.menu__link::after
+    content: ""
+    width: calc(100% - 20px)
+    height: 3px
+    position: absolute
+    bottom: -10px
+    left: 10px
+    background: #089e78
+    transform: scale(0)
+    transition: .3s
+
+.menu__link--red
+    color: #f00
+    &:hover
+        color: #f00
+
+.menu__link--red::after
+    background: red
+
+.menu__item:hover > .menu__link::after
+    transform: scaleX(1.2)
+
+//網站商店
+.dropdown
+    position: absolute
+    width: 100%
+    height: auto
+    max-height: 0
+    background: rgba(237, 237, 237, 0.95)
+    left: 0
+    // opacity: 0
+    top: 100%
+    transition: .5s
+    overflow: hidden
+
+.dropdown--row
+    display: flex
+
+.dropdown
+    position: absolute
+    width: 100vw
+    opacity: 0
+
+.menu__item--shop:hover > .dropdown
+    max-height: 500px
+    opacity: 1
+
+.dropdownlist
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    align-content: start
+    justify-content: start
+    gap: 20px
+
+.dropdownlist,.dropdownitem__img
+    flex: 1
+    margin: 40px 80px
+
+.img
+    width: 300px
+// 下拉副選單
+.menulist
+    width: 100%
+    height: auto
+    max-height: 0
+    background: rgba(237, 237, 237, 0.95)
+    left: 0
+    top: 100%
+    transition: .5s
+    overflow: hidden
+
+.menulist--column
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: calc(100% + 20px)
+    width: 140px
+    padding: 0 10px
+    background: rgba(255, 255, 255, 0.8)
+
+.menulist__item
+    width: 100%
+    letter-spacing: 1px
+    color: #666
+    font-size: 15px
+    padding: 15px 0
+    text-align: center
+    border-bottom: 1px solid #ccc
+
+.menu__item--classroom:hover > .menulist
+    max-height: 500px
+
+.menu__item--classroom
+    position: relative
+
+// icon
+.icon--circle
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    background-color: #fff
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+
+.submenu__item--search
+    display: grid
+    align-items: center
+    grid-auto-flow: column
+    gap: 10px
+    padding: 0 20px
+    border-left: 1px solid rgba(0, 0, 0, 0.18)
+
+.header__mobileBtn,.submenu__item--member,.submenu__item--cart
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 120px
+    height: 120px
+    background-image: linear-gradient(-45deg, #28bac3 0%, #16b48c 100%)
+    z-index: 1
+
+.submenu__item--cart
+    background-image: linear-gradient(-45deg, #086dda 0%, #005bac 100%)
+
+.submenu__item--cart:hover
+    background-image: linear-gradient(-45deg, #005bac 0%, #086dda 100%)
+
+.submenu__item--member:hover
+    background-image: linear-gradient(-45deg, #16b48c 0%, #28bac3 100%)
+
+.shorter
+    transition: .5s
+    height: 80px
+
+.header__mobileMenu
+    position: absolute
+    top: 0
+    left: -100vw
+    width: 100vw
+    height: 100vh
+    background: #fff
+
+.header__mobileMenu
+    position: absolute
+    width: 100vw
+    min-height: 100vh
+    top: 0
+    left: -100vw
+    background: #fff
+    transition: 0.5s
+    overflow: scroll
+    z-index: -1
+
+.header__mobileMenu.open
+    left: 0vw
+    z-index: 1
+
+.searchBar
+    width: 100%
+    height: 45px
+    background: #dbdbdb
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.searchBar::before, .searchBar__cancel::after
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    width: 45px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.searchBar::before
+    content: "\f002"
+    font-size: 16px
+    color: #000
+
+.searchBar__cancel::after
+    content: "\f00d"
+    font-size: 32px
+    background: #2e2e2e
+    color: #fff
+
+.searchBar__input
+    width: calc(100% - 90px)
+    height: 16px
+    border: 0
+    margin-right: 10px
+    border-left: 1px solid #afafaf
+    padding-left: 5px
+    letter-spacing: 1px
+    font-size: 12px
+    background-color: transparent
+
+.mobileMenu
+    margin-top: 20px
+
+.mobilemenu--column
+    display: flex
+    flex-direction: column
+    width: 90vw
+    margin: 0 auto
+    font-weight: 900
+    // margin-top: 20px
+
+.menu__item--block
+    // height: 50px
+    padding: 16px 0
+    // display: flex
+    // align-items: center
+    // border-bottom: 1px solid #0000005e
+    border-top: 1px solid #0000005e
+
+.menu__link--block
+    margin-left: 20px
+
+.menu--have-sub
+    position: relative
+    cursor: pointer
+
+.menu--have-sub::after
+    content: '\f078'
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    font-size: 20px
+    position: absolute
+    right: 10px
+    top: 50%
+    transition: .3s ease
+    transform: translateY(-50%)
+
+.menu--have-sub.open::after
+    transform: translateY(-50%) rotate(-180deg)
+
+.menu--sub
+    position: relative
+    top: 16px
+    height: auto
+    max-height: 0
+    overflow: hidden
+    transition: 1s ease
+    font-weight: normal
+
+.menu--sub.open
+    // position: relative
+    // top: 100%
+    max-height: 300px
+
+.socialIcon__download,.socialIcon__links
+    display: grid
+    grid-auto-flow: column
+    gap: 15px
+    justify-content: center
+    margin: 20px 0
+
+// text
+.text--white
+    color: #fff
+
+.text--dark
+    letter-spacing: 2px
+    font-size: 14px
+    color: #666
+    font-weight: 900
+
+.text--en
+    font-size: 8px
+    letter-spacing: 3px
+    opacity: 0.58
+
+// icon
+.icon--header
+    font-size: 25px
+    margin: 8px 0
+    color: #fff
+
+.icon--black
+    color: #000
+
+.icon--sm
+    font-size: 20px
+
+.icon--circle
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    background-color: #fff
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+
+// button
+.btn
+    display: block
+    padding: 15px 0
+    text-align: center
+    border-radius: 5px
+    cursor: pointer
+    font-size: 14px
+    font-weight: 300
+    vertical-align: middle
+
+.btn--main
+    background: #279a88
+    color: #fff
+
+.btn--signin
+    margin: 0 auto
+    width: 90vw
+
+@media (max-width:960px)
+    *
+        font-size: .8rem
+    .menu
+        height: 60px
+
+    .img
+        width: 100%
+
+    .menu__logo
+        width: 125px
+        height: 20px
+
+    .img--icon
+        max-width: 40px
+
+    .header__mobileBtn,.submenu__item--member,.submenu__item--cart
+        width: 60px
+        height: 60px

@@ -1,0 +1,33 @@
+.breadcrumbs
+    width: 100%
+    background: #e8ebee
+    padding: 20px 0 20px 140px
+    display: flex
+    align-items: center
+    &__item
+        color: #999999
+        margin: 0 10px
+        a:link, a:visited
+            text-decoration: none
+            color: #999999
+        p
+            color: #666
+            font-size: 14px
+    &__arrow
+        color: #999999
+
+@media (min-width: 1350.1px) and (max-width: 1500px)
+    .breadcrumbs
+        // padding: 20px 0 20px 100px
+
+@media (min-width: 960.1px) and (max-width: 1350px)
+    .breadcrumbs
+        padding: 20px 0 20px 10vw
+
+@media (min-width: 700.1px) and (max-width: 960px)
+    .breadcrumbs
+        padding: 16px 0 16px 40px
+
+@media (max-width: 700px)
+    .breadcrumbs
+        padding: 16px 0 16px 30px
