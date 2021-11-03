@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.kobayashi.com.tw/images/favicon.ico">
+    <!-- 頁面css -->
+    <link rel="stylesheet" href="css/chronology.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>小林大事紀</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="header__mobileBtn pc--none">
+            <i class="fas fa-bars icon--header"></i>
+        </div>
+
+        <nav class="mainmenu">
+            <a class="menu__logo" href="index.html">
+                <img class="logo" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+            </a>
+            <ul class="mainmenu__list mb--none">
+                <li class="menu__item menu__item--shop">
+                    <a href="catalog__product.html" class="menu__link menu__link--red menu__link--shop">網路商店</a>
+                    <div class="dropdown dropdown--row">
+                        <ul class="dropdownlist">
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-glasses dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">光學鏡框</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(透明)</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-carrot dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">保健食品</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-sun dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">太陽眼鏡</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(彩色)</a>
+                            </li>
+                        </ul>
+
+                        <a class="dropdownitem__img" href="">
+                            <img class="img" src="https://www.kobayashi.com.tw/upload/banner_menu/6143ef0bef211.jpg"
+                                alt="">
+                            <p>KUKKA花兒 最新活動</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--classroom">
+                    <a href="classroom.html" class="menu__link menu__link--classroom">專業教室</a>
+                    <div class="menulist menulist--column">
+                        <ul class="menu__list">
+                            <li class="menulist__item">
+                                <a href="">視力保健教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡框教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">多焦鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">濾藍光鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">隱形眼鏡教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">太陽眼鏡教室</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <a href="" class="menu__link">門市查詢</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="news.html" class="menu__link">最新消息</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="customer.html" class="menu__link">顧客服務</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">聯絡小林</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="submenu">
+            <a class="submenu__item--search mb--none" href="">
+                <i class="fas fa-search icon--header icon--black icon--sm"></i>
+                <p class="text--dark">
+                    全站搜尋
+                    <br>
+                    <span class="text--en">SEARCH</span>
+                </p>
+            </a>
+            <a class="submenu__item--member mb--none" href="">
+                <i class="far fa-user icon--header"></i>
+                <span class="text--white">會員中心</span>
+            </a>
+            <a class="submenu__item--cart" href="">
+                <i class="fas fa-shopping-cart icon--header"></i>
+                <span class="text--white mb--none">預訂區</span>
+            </a>
+        </div>
+
+        <div class="header__mobileMenu pc--none">
+            <form action="" class="searchBar">
+                <input class="searchBar__input" type="text" placeholder="請輸入關鍵字">
+                <div class="searchBar__cancel"></div>
+            </form>
+            <nav class="mobileMenu">
+                <a class="btn btn--main btn--signin" href="">登入/註冊</a>
+                <ul class="mobilemenu--column ">
+                    <li class="menu__item--block ">
+                        <a class="menu__link--block" href="">會員中心</a>
+                    </li>
+                    <li class="menu__item--block menu__item--sub">
+                        <p class="menu__link--block menu--have-sub">網路商店</p>
+                        <ul class="menu--sub menu--column">
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">光學眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">太陽眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(透明)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(彩色)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">保健食品/其他</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">門市查詢</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">最新消息</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">顧客專區</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">專業教室</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">關於小林</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">人才招募</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="socialIcon">
+                <div class="socialIcon__download">
+                    <a class="icon-google" href="">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/google.png" alt="">
+                    </a>
+                    <a href="" class="icon-apple">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/ios.png" alt="">
+                    </a>
+                </div>
+                <div class="socialIcon__links">
+                    <a href="" class="icon-ig">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                    </a>
+                    <a href="" class="icon-fb">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                    </a>
+                    <a href="" class="icon-yt">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <p class="banner__title">HISTORY</p>
+        <p class="banner__subtitle">小林大事紀</p>
+    </div>
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__item"><a href="/kobayashi/index.html"><i class="fas fa-home"></i></a></div>
+        <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="breadcrumbs__item">
+            <a href="#"><p>關於小林</p></a>
+        </div>
+        <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="breadcrumbs__item">
+            <p>小林大事紀</p>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2020</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>獨家代理「Armani Exchange」精品眼鏡</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>韓流偶像「畢書盡Bii」強勢回歸！<br>代言小林眼鏡40週年CLEX鏡架整副1100起</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡40週年</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2019</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>台灣濱崎步-保庇天后「王彩樺」熱情代言，迎接小林眼鏡40週年</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>EC購物平台改版</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡門市全面開放「電子支付」</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>獨家代理『Kinloch Anderson』精品眼鏡</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡推出自有品牌隱形眼鏡「Kukka花兒」</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡開立全新門市「蔡司概念店」</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>戲劇小生「張立昂」代言伊藤現代日式工藝系列鏡架，廣受好評</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2018</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>超人氣男神李國毅代言「KUROSHIO超輕塑鋼鏡架」讓視界‧輕而易舉</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>官網改版</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2017</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>高人氣營幕情侶「晨翔、雨非」推薦『NiKKEN』造型系列鏡架代言人</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲台灣服務業大評鑑【金牌獎】，也是唯二企業「連續六年」獲得金牌榮譽</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡通過719張「考試院驗光專技」證照，榮獲國家認證值得肯定！</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2016</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡『APP』上線，手機化身為行動會員卡，下載即享專屬線上即時服務資訊</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>連續五年榮獲台灣服務業大評鑑【金牌獎】</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>暖心男神「畢書盡Bii」代言『SUPERSTAR』眼鏡，綻放魔幻魅力!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2015</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡門市全面導入『電子發票』系統</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>搖滾教父「李亞明」及「Dino李玉璽」，父子聯手代言多焦鏡片活動</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲台灣服務業大評鑑【金牌獎】、【服務尖兵個人獎】</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡歡慶35週年，偶像團體「勢在必行」首次合體代言『SUPERSTAR』眼鏡，引領流行話題</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2014</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>眼鏡情人「嚴爵」引領日系『NiKKEN』眼鏡新風潮</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>陽光暖男「劉以豪」代言非球面鏡片，傳達更傳真的視覺新體驗</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲台灣服務業大評鑑【金牌獎】、【服務尖兵個人獎】</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2013</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全球眼鏡業首創『數位眼底鏡』光學檢測。以數位方式呈現眼底圖像，即時了解眼底概況</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>紐約都會時尚『NATURALLY JOJO』眼鏡，小林眼鏡專賣</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>取得美國職棒大聯盟獨家授權，推出『MLB』眼鏡</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出美國品牌『康寧鏡片』。康寧為全球觸控及特殊玻璃產品的領導品牌，高科技光學產品享譽國際</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲服務業最高指標【GSP特優級企業認證標章】</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲台灣服務業大評鑑【金牌獎】</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2012</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>榮獲2012台灣服務業大評鑑【金牌獎】、【服務尖兵個人獎】</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>首創『智慧配鏡3D模擬系統』，運用平板電腦，動態呈現鏡片功能特性，配鏡可以一目瞭然，理財達人『阮慕華』專業推薦</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>休閒品牌『LOTTO』眼鏡魅力再起，偶像團體飛輪海『炎亞綸』深情代言</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>12月底全國門市總數已達227家</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2011</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>黑潮kuroshio眼鏡狂野登場！國際巨星天團F4『吳建豪』強力推薦！</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>小林眼鏡智慧型商店正式啟動！</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲「經濟部商業司99年流通服務業智慧商店實驗推動計畫補助，資訊工程策進會輔導」，推出智慧多媒體「聰明機」！</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2010</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>榮獲『經濟部商業服務業優良品牌』</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>持續推動國家專業證照制度，建立門市人員專業介紹看板，樹立業界專業標竿</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>2010 小林眼鏡邁入30週年，為回饋顧客支持，特舉辦「汽車」抽獎活動</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>6月底全國門市總數達170家</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出「伊藤」手造眼鏡，邀請流行小天王「潘緯柏」為年度代言人</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>八八水災發動「一日捐」，捐贈100萬予台灣世界展望會專款專用</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>11月底全國門市總數已達202家</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>邀請金曲獎最佳演唱團體「大嘴巴」，代言CUPID系列眼鏡，深獲年輕族群喜愛</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>另積極推廣聰明多焦系列鏡片，邀請國寶級藝人「明華園 孫翠鳳」代言推薦，深獲好評</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2009</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出NIKKEN水鑽系列眼鏡 並邀請偶像藝人 飛輪海-吳尊 魅力代言</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2008</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全台灣門市突破145家，歡慶消費累積人數，突破500萬人次</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>榮獲GSP優良服務認證、ISO 9001國際標準品質認證</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2007</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出NIKKEN水鑽系列眼鏡 並邀請偶像藝人 飛輪海-吳尊 魅力代言</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2006</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出日系風格 NiKKEN® 雕花眼鏡，並由藝人何潤東、柏妍安代言活動</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2005</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全台灣門市突破130家店。小林眼鏡邁入25週年，由藝人吳克群代言 25 週年慶活動</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2004</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全台灣門市突破100家。成為NBA眼鏡台灣區獨家總經銷</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2003</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全國導入及時進銷存On-Line系統，完成所有門市電腦連線</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>每位小林的顧客均可以在任何一家小林眼鏡分公司，及時查詢配鏡完整資料</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>對抗「SARS」，免費贈送專責醫院3000 副醫療用護目眼鏡，保護醫護人員工作安全</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>九月推出「助學專案」免費贈送清寒學生1000副眼鏡及5000付鏡架</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2002</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出「聰明」® 抗反光前掛眼鏡，首創將抗反光前掛運用磁鐵與眼鏡作連結，並由藝人竇志孔代言</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2001</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全台灣門市突破90家。推出「鈦瘋狂」眼鏡，以低價高品質眼鏡獲消費者青睞</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>取得「哈利波特」眼鏡經銷權，與全球哈利波特熱潮同步流行</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>2000</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡邁入20週年，推出K2000「鈦厲害」® 純鈦眼鏡紀念眼鏡</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出「鈦前衛」® 眼鏡，領先業界將太陽眼鏡前掛運用磁鐵與眼鏡作連結，並由港星謝霆鋒為產品代言人</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1999</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>強化小林眼鏡「領導流行、物超所值」之企業定位</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>續推出「鈦多彩」®眼鏡，並由名藝人周俊偉為產品代言人</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出「鈦聰明」® 眼鏡，將高科技的記憶金屬運用於眼鏡產品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1998</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出「鈦多彩」® 眼鏡，將眼鏡高品質與流行色彩作緊密結合，並由名導演吳念真父子為產品代言人</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>營建小林眼鏡是年輕人配鏡選擇的第一品牌</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1997</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>推出「Color eyewear」絕色系列眼鏡，創造彩色眼鏡流行風潮</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>全台灣門市突破80家，年營業額突破新台幣6億元</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出「Kobayashi純鈦」眼鏡，確立小林眼鏡高品質商品地位</p>
+                    </li>
+                    <li class="timelist__item">
+                        <p>推出「無邊鏡架＋PC防爆鏡片」系列，小林眼鏡成為無邊眼鏡專家</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1996</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>開發「星座眼鏡」商品，引爆年輕人新潮流行風，建立業界領導流行之地位</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1995</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>創造商品差異化之訴求，推出「扣立變」®兩用眼鏡，造成台灣眼鏡市場轟動</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1993</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>全臺灣門市突破65家</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1992</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>成立電腦中心，架構全臺灣門市電腦連線網路</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1990</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>啟用全新的CIS企業識別系統</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1988</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡第50家門市成立</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1984</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡第30家門市成立</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock reverse">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age">
+                <p>1982</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡第10家門市成立</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeblock">
+            <div class="timeblock__item timeblock__item--blank"></div>
+            <div class="timeblock__item--age timeblock__item--ageend">
+                <p>1980</p>
+            </div>
+            <div class="timeblock__item timeblock__item--content">
+                <ul class="timelist">
+                    <li class="timelist__item">
+                        <p>小林眼鏡公司成立。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <nav class="footer__map">
+            <div class="align-center map_mb">
+                <a href="" class="map__logo">
+                    <img class="maplogo__image" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+                </a>
+                <span class="map__title ml8 mb-none">因為用心 所以更好</span>
+            </div>
+            <ul class="maplist mb-none">
+                <li class="list__item--sm maplist__item"><a href="">關於小林</a></li>
+                <li class="list__item--sm maplist__item"><a href="">About Us</a></li>
+                <li class="list__item--sm maplist__item"><a href="">人才招募</a></li>
+                <li class="list__item--sm maplist__item"><a href="">網站地圖</a></li>
+            </ul>
+            <div class="align-center map_mb--r">
+                <span class="map_app mb-none">小林眼鏡 APP下載</span>
+                <div class="mapapp__box">
+                    <a class="mapapp__app"
+                        href="https://play.google.com/store/apps/details?id=tw.com.kobayashi.app&hl=zh_TW">
+                        <img src="https://www.kobayashi.com.tw/images/google.png" alt="Google Play">
+                    </a>
+                    <a class="mapapp__app"
+                        href="https://itunes.apple.com/tw/app/%E5%B0%8F%E6%9E%97%E7%9C%BC%E9%8F%A1/id1081723764?mt=8">
+                        <img src="https://www.kobayashi.com.tw/images/ios.png" alt="Apple Store">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="footer__sub">
+            <div class="footer__media socialIcon__links footer__sub--item">
+                <a href="" class="icon-ig">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                </a>
+                <a href="" class="icon-fb">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                </a>
+                <a href="" class="icon-yt">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                </a>
+            </div>
+            <ul class="footer_info footer__text text-center">
+                <li class="list__item--sm">台北市南港路二段97號7樓</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">電話：(02)2651-3858</li>
+                <li class="list__item--sm">傳真：(02)2651-3878</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">免費服務電話：0800-016-883</li>
+            </ul>
+            <div class="line-h">
+                <p class="list__item--sm text-center border-none bodr-n">7F., No.97, Sec. 2, Nangang Rd., Nangang Dist.,
+                    <br class="pc-none">
+                    Taipei City 115,Taiwan (R.O.C)
+                </p>
+            </div>
+            <ul>
+                <a href="#" class="list__item--sm">退患或通知</a>
+                <a href="#" class="list__item--sm">使用條款</a>
+                <a href="#" class="list__item--sm">隱私權政策</a>
+            </ul>
+            <p class="copyright">
+                Copyright © 2017 Kobayashi Optical Co.,Ltd.
+                <span class="bold">
+                    DESIGN BY BEGONIA
+                </span>
+            </p>
+        </nav>
+
+        <!-- 至頂按鈕區域 -->
+        <div class="top-btn">
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://www.kobayashi.com.tw/images/top.png" alt="">
+            </a>
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/caas-media-storage/upload/photos/user-upload-photo/b282b804-525a-44ab-870b-554f6ec8593e-f6bdda852d174602bf73d9c2e63203b8.png"
+                    alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

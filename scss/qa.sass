@@ -1,0 +1,133 @@
+// 清除預設值
+@import '_resets'
+// 變數設定
+// @import '_varmenu'
+// header區域設定
+@import '_header'
+// footer區域設定
+@import 'footer'
+// 麵包屑區域
+@import '_breadcrumbs'
+// banner區域
+@import '_variable+banner'
+
+
+
+html,body
+    width: 100%
+    height: 100%
+    
+body
+    overflow-y: scroll
+    
+// QA問答區
+.container
+    width: 70%
+    background-color: #fff
+    padding: 50px 0
+    margin: 0 auto
+    position: relative
+
+
+// Q區塊
+.qa_area,.qa_area2
+    width: 100%
+    margin: 0 auto
+    &:first-child
+        border-top: 2px solid #b4b4b4
+    .q-box
+        padding: 10px 0
+        margin: 0 auto
+        border-top: 1px solid #b4b4b4
+        border-bottom: 1px solid #b4b4b4
+        overflow: hidden
+        color: #333
+        cursor: pointer
+        .q-box-center
+            align-items: center
+
+//  A區塊
+.a-text-center
+    p
+        margin: 10px 0                    
+            
+//  共同設定   
+.q-box-center,.a-box-center
+    display: flex
+
+.text-center1,.a-text-center
+    width: 95%
+    margin: 0 auto
+
+.a-box
+    width: 100%
+    margin: 0 auto
+    max-height: 0
+    overflow: hidden
+    transition: .5s
+    background: #e7e7e7
+    // border-bottom: 1px solid #b4b4b4
+
+
+// 關開設定
+
+.open
+    .a-box
+        max-height: 1000px
+        transition: 2s
+
+
+// icon圖示反轉
+.open
+    .text
+        transform: rotate(-180deg)
+        transition: .5s    
+
+// 選取設定
+// input[type=radio]:checked + .a-box
+//     background: #f8f8f8
+//     height: auto
+//     transition: .5s
+    
+        
+// // 隱藏設定
+// input[type=radio]
+//     display: none
+
+
+// 頁面按鈕
+.page-box
+    width: 100%
+    display: flex
+    justify-content: center    
+
+
+.page-btn
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    border: 1px solid #4d4d4d
+    font-size: 15px
+    margin: 0 5px
+    &:hover
+        color: #fff
+        background: #4d4d4d
+        p,a,i
+            color: #fff
+
+.Btn-Target
+    background: #4d4d4d
+    color: #fff
+
+// icon設定
+.icon-p-right
+    color: #9999
+
+.icon-left,.icon-right
+    width: 35px
+    height: 35px
+
+.icon-left
+    margin-right: 10px
+

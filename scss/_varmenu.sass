@@ -1,0 +1,118 @@
+// 引入檔案區域
+@import './_resets'
+
+
+// 顏色設定區
+
+// 主色配置=====
+$main_color--blue: #196bb4
+$main_color--green: #00b688
+
+// 輔色配置====
+$sub__color--blue: #4588c7
+$sub__color--paleblue: #ebf2f8
+$sub__color--green: #329b74
+
+// 提示色配置=====
+$hint__color: #ff0000
+
+// 背景邊框文字配置=====
+$grayscale__color--black: #333333
+$grayscale__color--bold: #4d4d4d
+$grayscale__color--medium: #999999
+$grayscale__color--light: #d3d3d3d3
+$grayscale__color--thin: #f2f2f2
+$grayscale__color1: #ebebeb
+$grayscale__color2: #e8ebee
+$grayscale__color3: #32b490
+$grayscale__color4: #c9c9c9
+$grayscale__color5: #dddddd
+// 文字設定區=====
+
+// 文字大小
+$font-sizes: ("title__main": 30px,"title__main--english": 36px,"title__sub": 20px,"title__sub--english": 13px,"text__content": 14px)
+
+// 文字間距
+$letter-spacings: ("title__main": 4px,"title__main--english": 5px,"title__sub": 2px,"title__sub--english": 0px,"text__content": 2px)
+
+// 文字粗細大小
+$font-welghts: ("title__main": 600,"title__main--english": 700,"title__sub": 600,"title__sub--english": 400,"text__content": 400)
+
+
+// 變數清單設定區
+// $display: ("bk": block,"ie": inline,"no": none,"i-bk": inline-block,"fx": flex)
+
+
+// 容器設定區=====
+
+// 寬高設定
+$w: 1px
+$h: 1px
+
+
+
+
+// 容器排版=======
+@mixin flex($d-play,$direction,$justify,$align)
+    display: $d-play
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+
+// 容器自訂大小    
+@mixin box-size($w,$h)
+    width: $w
+    height: $h
+
+    
+
+// 文字模組========
+@mixin title__main
+    letter-spacing: 4px
+    font:
+        weight: 600
+        size: 30px
+
+@mixin title__main--english
+    letter-spacing: 5px
+    font:
+        weight: 700
+        size: 36px
+
+@mixin title__sub
+    letter-spacing: 2px
+    font:
+        weight: 600
+        size: 20px
+
+@mixin title__sub--english
+    letter-spacing: 0
+    font:
+        weight: 400
+        size: 13px
+
+@mixin title__content
+    letter-spacing: 2px
+    line-height: 150%
+    font:
+        weight: 400
+        size: 14px
+
+
+
+
+// 字體大小
+@function size($size-name)
+    @return map-get($font-sizes, $size-name)
+
+// 文字間距
+@function spacing($letter-spacing-name)
+    @return map-get($letter-spacings, $letter-spacing-name)
+
+// 字體粗細    
+@function welght($welght-name)
+    @return map-get($font-welghts, $welght-name)
+
+// @function play($play-name)
+//     @return map-get($display,$pley-name)

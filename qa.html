@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="css/qa.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="header__mobileBtn pc--none">
+            <i class="fas fa-bars icon--header"></i>
+        </div>
+
+        <nav class="mainmenu">
+            <a class="menu__logo" href="index.html">
+                <img class="logo" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+            </a>
+            <ul class="mainmenu__list mb--none">
+                <li class="menu__item menu__item--shop">
+                    <a href="catalog__product.html" class="menu__link menu__link--red menu__link--shop">網路商店</a>
+                    <div class="dropdown dropdown--row">
+                        <ul class="dropdownlist">
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-glasses dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">光學鏡框</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(透明)</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-carrot dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">保健食品</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-sun dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">太陽眼鏡</a>
+                            </li>
+
+                            <li class="dropdownitem__text">
+                                <i class="fas fa-eye dropdownitem__icon icon--circle"></i>
+                                <a href="" class="dropdownlink">隱形眼鏡(彩色)</a>
+                            </li>
+                        </ul>
+
+                        <a class="dropdownitem__img" href="">
+                            <img class="img" src="https://www.kobayashi.com.tw/upload/banner_menu/6143ef0bef211.jpg"
+                                alt="">
+                            <p>KUKKA花兒 最新活動</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="menu__item menu__item--classroom">
+                    <a href="classroom.html" class="menu__link menu__link--classroom">專業教室</a>
+                    <div class="menulist menulist--column">
+                        <ul class="menu__list">
+                            <li class="menulist__item">
+                                <a href="">視力保健教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡框教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">多焦鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">濾藍光鏡片教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">隱形眼鏡教室</a>
+                            </li>
+                            <li class="menulist__item">
+                                <a href="">太陽眼鏡教室</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu__item">
+                    <a href="" class="menu__link">門市查詢</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="news.html" class="menu__link">最新消息</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="customer.html" class="menu__link">顧客服務</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">聯絡小林</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="submenu">
+            <a class="submenu__item--search mb--none" href="">
+                <i class="fas fa-search icon--header icon--black icon--sm"></i>
+                <p class="text--dark">
+                    全站搜尋
+                    <br>
+                    <span class="text--en">SEARCH</span>
+                </p>
+            </a>
+            <a class="submenu__item--member mb--none" href="">
+                <i class="far fa-user icon--header"></i>
+                <span class="text--white">會員中心</span>
+            </a>
+            <a class="submenu__item--cart" href="">
+                <i class="fas fa-shopping-cart icon--header"></i>
+                <span class="text--white mb--none">預訂區</span>
+            </a>
+        </div>
+
+        <div class="header__mobileMenu pc--none">
+            <form action="" class="searchBar">
+                <input class="searchBar__input" type="text" placeholder="請輸入關鍵字">
+                <div class="searchBar__cancel"></div>
+            </form>
+            <nav class="mobileMenu">
+                <a class="btn btn--main btn--signin" href="">登入/註冊</a>
+                <ul class="mobilemenu--column ">
+                    <li class="menu__item--block ">
+                        <a class="menu__link--block" href="">會員中心</a>
+                    </li>
+                    <li class="menu__item--block menu__item--sub">
+                        <p class="menu__link--block menu--have-sub">網路商店</p>
+                        <ul class="menu--sub menu--column">
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">光學眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">太陽眼鏡</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(透明)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">隱形眼鏡(彩色)</a>
+                            </li>
+                            <li class="menu__item--block">
+                                <a class="menu__link--block" href="">保健食品/其他</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">門市查詢</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">最新消息</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">顧客專區</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">專業教室</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">關於小林</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">人才招募</a>
+                    </li>
+                    <li class="menu__item--block">
+                        <a class="menu__link--block" href="">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="socialIcon">
+                <div class="socialIcon__download">
+                    <a class="icon-google" href="">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/google.png" alt="">
+                    </a>
+                    <a href="" class="icon-apple">
+                        <img class="img" src="https://www.kobayashi.com.tw/images/ios.png" alt="">
+                    </a>
+                </div>
+                <div class="socialIcon__links">
+                    <a href="" class="icon-ig">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                    </a>
+                    <a href="" class="icon-fb">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                    </a>
+                    <a href="" class="icon-yt">
+                        <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="QA-main">
+        <div class="banner">
+            <p class="banner__title">Q&A</p>
+            <p class="banner__subtitle">常見問題</p>
+        </div>
+        
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__item"><a href="/index.html"><i class="fas fa-home"></i></a></div>
+            <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="breadcrumbs__item">
+                <a href="/customer.html"><p>顧客專區</p></a>
+            </div>
+            <div class="breadcrumbs__arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="breadcrumbs__item">
+                <p>常見問題</p>
+            </div>
+        </div>
+
+        <div class="container Qa">
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>紅利點數與會員購物金相關資訊</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+
+                            </p>
+                            <p>點數兌換期間分為<strong><u>每月1日至10日</u></strong>的會員開月祭，以及<strong><u>每月11日至月底</u></strong>的點數換換購。
+                            </p>
+                            <p><u><strong>會員開月祭</strong></u>：<span
+                                    microsoft="">適用於全會員，兌換期間為每月1日至10日，使用期限一個月，兌換比例1:10，可用於全品項。</span><br>
+                                全會員於開月祭期間兌換的點數可十倍兌換購物金，且可使用於全品項。兌換後即有消費限制，有效期限一個月，例:
+                                30點兌換成面額300元之購物金，使用限制為3000元以上之訂單。<br>
+                                <br>
+                                <u><strong>點數換換購</strong></u>：Ａ卡會員於換換購期間使用點數兌換的購物金為
+                                1：1，僅適用於非拋棄式品項及食品；Ｖ卡會員於換換購期間使用點數兌換的購物金為
+                                1：2，僅適用於拋棄式品項及食品。
+                            </p>
+                            <table border="1" cellpadding="1" cellspacing="1"
+                                style="border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: sans-serif; width: 500px;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4" style="padding: 0px; text-align: center;">點數兌換購物金說明</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">&nbsp;</td>
+                                        <td style="padding: 0px; text-align: center;"><strong>會員開月祭</strong></td>
+                                        <td colspan="2" rowspan="1" style="padding: 0px; text-align: center;">
+                                            <strong>點數換換購</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">兌換期間</td>
+                                        <td style="padding: 0px; text-align: center;">每月1日至10日</td>
+                                        <td colspan="2" rowspan="1" style="padding: 0px; text-align: center;">每月11日至月底
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">適用會員</td>
+                                        <td style="padding: 0px; text-align: center;">全會員</td>
+                                        <td style="padding: 0px; text-align: center;">A卡會員</td>
+                                        <td style="padding: 0px; text-align: center;">V卡會員</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">兌換比例</td>
+                                        <td style="padding: 0px; text-align: center;">1 : 10</td>
+                                        <td style="padding: 0px; text-align: center;">1 : 1</td>
+                                        <td style="padding: 0px; text-align: center;">1 : 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">點數</td>
+                                        <td style="padding: 0px; text-align: center;">5點</td>
+                                        <td style="padding: 0px; text-align: center;">100點</td>
+                                        <td style="padding: 0px; text-align: center;">50點</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">購物金</td>
+                                        <td style="padding: 0px; text-align: center;">50元</td>
+                                        <td style="padding: 0px; text-align: center;">100元</td>
+                                        <td style="padding: 0px; text-align: center;">100元</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">消費限制</td>
+                                        <td style="padding: 0px; text-align: center;">單筆500元 ↑</td>
+                                        <td style="padding: 0px; text-align: center;">單筆500元 ↑</td>
+                                        <td style="padding: 0px; text-align: center;">單筆1000元 ↑</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">限制比例</td>
+                                        <td style="padding: 0px; text-align: center;">購物金面額10倍 ↑</td>
+                                        <td style="padding: 0px; text-align: center;">購物金面額5倍 ↑</td>
+                                        <td style="padding: 0px; text-align: center;">購物金面額10倍 ↑</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">適用品項</td>
+                                        <td style="padding: 0px; text-align: center;">全品項</td>
+                                        <td style="padding: 0px; text-align: center;">非拋棄式商品、食品</td>
+                                        <td style="padding: 0px; text-align: center;">拋棄式商品、食品</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px; text-align: center;">使用期限</td>
+                                        <td colspan="3" rowspan="1" style="padding: 0px; text-align: center;">兌換日起算一個月
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>*上表中之數據為參考範例，實際點數尚有其他兌換面額，依系統提供的選項為準</p>
+                            <p>※注意：點數於各活動期間內兌換後，便只能使用於該期間的活動，例:
+                                A卡會員於點數換換購期間兌換的購物金，到了會員開月祭期間也只能購買點數換換購期間適用的商品，即只能使用非拋棄式商品和食品。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問小林眼鏡公司有販售什麼商品？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="font-family:arial,helvetica,sans-serif;">您好，小林眼鏡販售之商品有：一般眼鏡、太陽眼鏡、隱形眼鏡、隱形眼鏡藥水及保健眼睛之保健食品，以上若有任何需要請洽小林眼鏡各門市。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問小林眼鏡是全省售服嗎？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，小林眼鏡的全省門市為全國同步即時服務，一家配鏡，全省服務。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問鏡架的鏡腳斷裂了，該怎麼處理？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>
+                                <span style="font-size: 16px;">您好，一般鏡腳斷裂的處理方式可先回門市，請門市人員為您檢查斷裂處是否能以焊接處理，有可能會有焊接費用的產生，請納入考量。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問塑膠眼鏡框要如何保養?</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，請勿將眼鏡(包括隱形眼鏡)放直熱源處，以免變形，並妥善放置眼鏡盒內，鏡面要向上，若長期不用，則需定期清潔保養及通風。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問鏡片如果只破一片，是否可以只配單片？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，可至門市配單片，但要需留意新舊鏡片會有色差的問題，建議顧客在配單片時可納入考量。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問新的鏡片為何和舊的鏡片有色差？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，因為新鏡片未使用的情況下，其鏡片上的安全膜是全新，但舊的鏡片的安全膜則是使用一段時間，故鏡片的表面顏色會有差異。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>我想請問鏡片保養的問題？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="a-text-center">
+                            <p>
+                                <span style="font-family:arial,helvetica,sans-serif;">您好，在清潔眼鏡前先用清水沖刷眼鏡後，再以洗碗精清潔鏡片及框鏡，以指肉畫圓的方式使鏡片上起小泡沫後，再以清水沖洗乾淨，最後以衛生紙吸壓將水份吸乾。<br>
+                                    善意提醒：避免使用沐浴乳清潔，雖不會傷害鏡片，但是此清潔用品中的成份在你清潔鏡片後有殘留物的霧光感，故不適用</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問要如何才不會刮傷鏡片?</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，在鏡片未以清水沖洗過前，請勿先行以布或紙巾擦試鏡片。因為一般在外我們戴著眼鏡時，細微小細沙或髒東西會沾附在我們的鏡片上，此時若直接加壓上一塊布，來回用力的擦拭時，布面壓著細沙的情況下，容易磨損使鏡片刮傷，故建議先用清水將小細沙或髒東西沖刷，再擦拭較妥當。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_area">
+                
+                <div class="q-box">
+                    <div class="q-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#196BB4;stroke:#196BB4;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M109.613,118.795c-7.846-2.069-15.518-4.396-22.242-6.725c-1.207-0.431-2.414-0.862-3.535-0.862
+                                    c-13.793-0.517-25.605-10.69-25.605-29.398c0-18.621,11.381-30.604,27.07-30.604c15.777,0,26.037,12.242,26.037,29.398
+                                    c0,14.914-6.896,24.483-16.553,27.846v0.345c5.775,1.466,12.07,2.846,16.984,3.708L109.613,118.795z M103.406,80.948
+                                    c0-11.639-6.035-23.622-18.363-23.622c-12.674,0-18.881,11.725-18.795,24.312c-0.086,12.328,6.725,23.449,18.449,23.449
+                                    C96.682,105.087,103.406,94.225,103.406,80.948z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>請問隱形眼鏡可以長期配戴嗎？</p>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="text" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <polyline style="fill:none;stroke:#FFC524;stroke-width:10;stroke-miterlimit:10;" points="130.667,73.486 84.964,112.053 39.333,73.486 "></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-box">
+                    <div class="a-box-center">
+                        <div class="icon-left">
+                            <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 170 170"
+                                style="enable-background:new 0 0 170 170;" xml:space="preserve">
+                                <circle style="fill:#00B688;stroke:#00B688;stroke-miterlimit:10;" cx="85" cy="84.999"
+                                    r="80.125"></circle>
+                                <path style="fill:#FFFFFF;" d="M73.06,97.233l-6.851,20.749H57.4l22.413-65.965H90.09l22.51,65.965h-9.102l-7.047-20.749H73.06z
+                                        M94.689,90.579l-6.46-18.987c-1.468-4.307-2.446-8.221-3.425-12.038h-0.196c-0.979,3.915-2.055,7.928-3.327,11.94l-6.46,19.085
+                                    H94.689z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center1">
+                            <p>
+                                <span style="color: rgb(61, 62, 65); font-size: 16px;">您好，配戴時間不可過長，除非眼科專科醫師另有囑咐，否則不管是否屬於長戴型鏡片，均不能戴著睡覺，以免引起角膜感染。</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="page-box">
+                <a href="#">
+                    <div class="page-btn">
+                        <p class="Btn-Target">1</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="page-btn">
+                        <p>2</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="page-btn">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <nav class="footer__map">
+            <div class="align-center map_mb">
+                <a href="" class="map__logo">
+                    <img class="maplogo__image" src="https://www.kobayashi.com.tw/images/logo.png" alt="">
+                </a>
+                <span class="map__title ml8 mb-none">因為用心 所以更好</span>
+            </div>
+            <ul class="maplist mb-none">
+                <li class="list__item--sm maplist__item"><a href="">關於小林</a></li>
+                <li class="list__item--sm maplist__item"><a href="">About Us</a></li>
+                <li class="list__item--sm maplist__item"><a href="">人才招募</a></li>
+                <li class="list__item--sm maplist__item"><a href="">網站地圖</a></li>
+            </ul>
+            <div class="align-center map_mb--r">
+                <span class="map_app mb-none">小林眼鏡 APP下載</span>
+                <div class="mapapp__box">
+                    <a class="mapapp__app" href="https://play.google.com/store/apps/details?id=tw.com.kobayashi.app&hl=zh_TW">
+                        <img src="https://www.kobayashi.com.tw/images/google.png" alt="Google Play">
+                    </a>
+                    <a class="mapapp__app" href="https://itunes.apple.com/tw/app/%E5%B0%8F%E6%9E%97%E7%9C%BC%E9%8F%A1/id1081723764?mt=8">
+                        <img src="https://www.kobayashi.com.tw/images/ios.png" alt="Apple Store">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="footer__sub">
+            <div class="footer__media socialIcon__links footer__sub--item">
+                <a href="" class="icon-ig">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_ig.png" alt="">
+                </a>
+                <a href="" class="icon-fb">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_fb.png" alt="">
+                </a>
+                <a href="" class="icon-yt">
+                    <img class="img img--icon" src="https://www.kobayashi.com.tw/images/icon_you.png" alt="">
+                </a>
+            </div>
+            <ul class="footer_info footer__text text-center">
+                <li class="list__item--sm">台北市南港路二段97號7樓</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">電話：(02)2651-3858</li>
+                <li class="list__item--sm">傳真：(02)2651-3878</li>
+                <br class="pc-none">
+                <li class="list__item--sm border-none">免費服務電話：0800-016-883</li>
+            </ul>
+            <div class="line-h">
+                <p class="list__item--sm text-center border-none bodr-n">7F., No.97, Sec. 2, Nangang Rd., Nangang Dist.,
+                <br class="pc-none">
+                Taipei City 115,Taiwan (R.O.C)
+                </p>
+            </div>
+            <ul>
+                <a href="#" class="list__item--sm">退患或通知</a>
+                <a href="#" class="list__item--sm">使用條款</a>
+                <a href="#" class="list__item--sm">隱私權政策</a>
+            </ul>
+            <p class="copyright">
+                Copyright © 2017 Kobayashi Optical Co.,Ltd.
+                <span class="bold">
+                     DESIGN BY BEGONIA
+                </span>
+            </p>
+        </nav>
+
+        <!-- 至頂按鈕區域 -->
+        <div class="top-btn">
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://www.kobayashi.com.tw/images/top.png" alt="">
+            </a>
+            <a class="icon-md top-btn-icon" href="#">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/caas-media-storage/upload/photos/user-upload-photo/b282b804-525a-44ab-870b-554f6ec8593e-f6bdda852d174602bf73d9c2e63203b8.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        $(document).ready(function () {
+            jQuery(function ($) {
+                /* 手機選單開合 */
+                $(".header__mobileBtn").click(function () {
+                    $(".header__mobileMenu").addClass("open");
+                });
+                $(".searchBar__cancel").click(function () {
+                    $(".header__mobileMenu").removeClass("open");
+                });
+
+                // 手機第二選單開關
+                $(".menu--have-sub").click(function () {
+                    $(this).toggleClass("open");
+                    $('.menu--have-sub + .menu--sub').toggleClass("open");
+                });
+
+            });
+        });
+
+        $(".qa_area").click(function () {
+
+            $(this).toggleClass("open").siblings().removeClass("open");
+            
+        });
+    </script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

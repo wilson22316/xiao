@@ -1,0 +1,430 @@
+// 變數們 =================================
+// color
+$color__main--blue: #196BB4
+$color__main--green: #00B688
+
+$color__sub--blue: #4588C7
+$color__sub--paleblue: #EBF2F8
+$color__sub--green: #329B74
+
+$color-important: #FF5959
+
+$color__grayscale--black: #333333
+$color__grayscale--bold: #4D4D4D
+$color__grayscale--medium: #999999
+$color__grayscale--light: #D3D3D3
+$color__grayscale--thin: #F2F2F2
+
+// font-style
+=title__main($color)
+    font:
+        family: "Microsoft JhengHei",sans-serif
+        size: 30px
+        weight: 600
+    letter-spacing: 4px
+    color: $color
+
+=title__main--english($color)
+    font:
+        family: "Myriad Pro",sans-serif
+        size: 36px
+        weight: 700
+    letter-spacing: 5px
+    color: $color
+
+=title__sub($color)
+    font:
+        family: "Microsoft JhengHei",sans-serif
+        size: 20px
+        weight: 600
+    letter-spacing: 2px
+    color: $color
+
+=text__content($color)
+    font:
+        family: "Microsoft JhengHei",sans-serif
+        size: 14px
+        weight: 400
+    letter-spacing: 2px
+    line-height: 150%
+    color: $color
+
+=text__mini($color)
+    font:
+        family: "Microsoft JhengHei",sans-serif
+        size: 13px
+        weight: 400
+    letter-spacing: 1px
+    color: $color
+
+// layout
+=flexBox($direction,$justifyContent)
+    display: flex
+    align-items: center
+    justify-content: $justifyContent
+    flex-direction: $direction
+
+=gridBox($template-columns)
+    display: grid
+    grid-template-columns: $template-columns
+
+
+
+label,
+button,
+input,
+.searchSet__icon,
+    cursor: pointer
+
+.mainContent_top
+    margin: 0 auto
+    padding: 50px 0
+    max-width: 1280px
+
+
+//書籤切換按鈕 =================================
+.toggle
+    +gridBox(1fr 1fr)
+    text-align: center
+    &__item
+        padding: 14px 0
+        background-color: #ffffff
+        border: 1px solid $color__grayscale--light
+        border-bottom: 1px solid $color__main--green
+        +text__content($color__grayscale--medium)
+        transition: .3s
+        &:hover,
+        &--checked
+            background-color: $color__main--green
+            border: 1px solid $color__main--green
+            +text__content(#ffffff)
+
+// 關鍵字搜尋列 =================================
+
+.search
+    +flexBox(row,space-between)
+    border-bottom: 1px solid $color__grayscale--light
+    padding: 15px 0
+    &__descrip
+    +text__mini($color__grayscale--bold)
+    &__textbox
+        height: 36px
+        +gridBox(300px 60px)
+    &__input
+        border: 1px solid $color__grayscale--medium
+        color: $color__grayscale--bold
+        padding: 0 10px
+        font-size: 13px
+        &::-webkit-input-placeholder
+            font-size: 12px
+            color: $color__grayscale--medium
+    &__button
+        background-color: $color__grayscale--black
+        border: 1px solid $color__grayscale--black
+        opacity: .8
+        transition: .3s
+        +text__mini(#ffffff)
+        &:hover
+            opacity: 1
+
+// 類別選擇按鈕 =================================
+.catalog
+    &-toggle
+        +gridBox(repeat(5, 1fr))
+        text-align: center
+        gap: 15px
+        padding: 20px 0
+        &__text
+            +text__content(#ffffff)
+        &__item
+            background-color: $color__grayscale--medium
+            +flexBox(row,center)
+            height: 65px
+            position: relative
+            transition: .3s
+            i
+                background-color: #ffffff
+                color: $color__grayscale--medium
+                width: 28px
+                height: 28px
+                font-size: 13px
+                line-height: 28px
+                border-radius: 50%
+                margin-right: 5px
+            &::after
+                content: ""
+                border-top: 10px solid $color__grayscale--medium
+                border-right: 12px solid rgba(0,0,0,0)
+                border-left: 12px solid rgba(0,0,0,0)
+                border-bottom: 0
+                position: absolute
+                bottom: 0px
+                transition: .3s
+                opacity: 0
+                z-index: -100
+            &:hover,
+            &--selected
+                background-color: $color__sub--blue
+                i
+                    color: $color__sub--blue
+            &:hover::after,
+            &--selected::after
+                border-top: 10px solid $color__sub--blue
+                bottom: -10px
+                opacity: 1
+
+// 目錄類別內容 =================================
+.catalog
+    border-bottom: 1px solid $color__grayscale--bold
+    border-top: 1px solid $color__grayscale--bold
+    &__row
+        +gridBox(200px 1fr)
+        border-bottom: 1px solid $color__grayscale--light
+    &__tag
+        background-color: $color__sub--paleblue
+    &__tagtext
+        padding: 15px 0 15px 15px
+        +text__content($color__grayscale--bold)
+        text-align: center
+        letter-spacing: 10px
+    &__label
+        +text__content($color__grayscale--bold)
+        position: relative
+        margin-left: 15px
+    &__items
+        +gridBox(repeat(7, 1fr))
+        padding: 15px 0 15px 15px
+        row-gap: 15px
+.item
+    &_long1
+        grid-column: 1/3
+    &_long2
+        grid-column: 5/7
+    &_long3
+        grid-column: 3/5
+
+.searchSet
+    background-color: $color__grayscale--thin
+    padding: 17px 50px
+    +text__mini($color__grayscale--medium)
+    +flexBox(row,space-between)
+    &__resultNum
+        color: $color__main--blue
+        margin: 0 3px
+    &__icon
+        color: $color__main--green
+        font-size: 16px
+        margin-left: 10px
+        transform: rotate(0deg)
+        &--rotate
+            transition: 1s
+            transform: rotate(360deg)
+
+// 多選框樣式設定 =================================
+.catalog__item
+    input
+        width: 0
+        opacity: 0
+    label::before
+        display: inline-block
+        width: 16px
+        height: 16px
+        content: ""
+        background-color: $color__grayscale--thin
+        position: absolute
+        left: -20px
+        top: 1.5px
+        transition: .3s
+    input:checked+label::before
+        content: "\f00c"
+        font-family: "Font Awesome 5 Free"
+        font-weight: 900
+        font-size: 14px
+        line-height: 16px
+        color: #F8BF4C
+        background-color: $color__grayscale--medium
+
+// 順序 select 設定 =================================
+.product__selector
+    // text-align: right
+    padding: 15px 0
+    margin-top: 40px
+    border-top: 1px dotted $color__grayscale--light
+    select
+        float: right
+        width: 250px
+        height: 45px
+        +text__content($color__grayscale--medium)
+        border: 1px solid $color__grayscale--light
+        padding-left: 15px
+    .float_left
+        float: left
+        line-height: 45px
+
+// 限定活動頁面內容 =================================
+// 輪播圖
+.eventshow
+    margin: 20px 0
+    +flexBox(row,space-between)
+    position: relative
+.eventshow__button
+    width: 35px
+    height: 35px
+    border: 1px solid $color__grayscale--medium
+    border-radius: 50%
+    font-size: 28px
+    line-height: 35px
+    text-align: center
+    color: $color__grayscale--medium
+    cursor: pointer
+.evenshow_Carouselrow
+    // posigion: absolute
+    // display: flex
+    // overflow-x: hidden
+    width: calc( 100% - 100px )
+    +gridBox(1fr 1fr)
+    gap: 8px
+.eventshow__image_box
+    cursor: pointer
+    +flexBox(column,center)
+    // width: 50vw
+.eventshow__image
+    width: 100%
+.eventshow__caption
+    +text__content($color__grayscale--black)
+
+// RWD 樣式設定 =================================
+
+@media (max-width: 1920px)
+    .mainContent_top
+        max-width: 1080px
+    .mobile_topContent,.mobile_btnBox,.PCnone
+        display: none
+
+@media (max-width: 1280px)
+    .mainContent_top
+        max-width: 880px
+
+@media (max-width: 820px)
+    .mainContent_top
+        padding: 50px 20px
+    // 手機版的頂部敘述＆關閉按鈕
+    .mobile_topContent
+        display: block
+        border-bottom: 1px solid $color__grayscale--medium
+        padding: 0 0 15px 0
+        p
+            +text__mini($color__grayscale--bold)
+        .mobile_icon
+            color: $color__grayscale--bold
+            text-align: right
+            i
+                cursor: pointer
+    //手機版底部確認清除按鈕
+    .mobile_btnBox
+        padding: 15px 0
+        +gridBox(1fr 1fr)
+        gap: 10px
+        .mobile_btn
+            +text__mini(#ffffff)
+            height: 35px
+            border: none
+        .greenBtn
+            background-color: $color__sub--green
+        .grayBtn
+            background-color: $color__grayscale--bold
+    // 隱藏搜尋列
+    .search
+        display: none
+    //書籤切換按鈕
+    .toggle__item
+        // display: none
+        padding: 10px 0
+    // 目錄類別內容樣式
+    .catalog
+        // display: none
+        border: none
+        &-toggle
+            gap: 5px
+            // display: none
+        &-toggle__item
+            height: 80px
+            i
+                display: none
+            &::after
+                display: none
+        &__item label::before
+            display: none
+        &__row
+            +gridBox(65px 1fr)
+        &__tag
+            background-color: rgba(0,0,0,0)
+        &__tagtext
+            padding: 15px 0 15px 5px
+            font-size: 12px
+            letter-spacing: 5px
+        &__items
+            display: flex
+            flex-wrap: wrap
+            padding: 15px 0 15px 0
+        &__item
+            display: flex
+            position: relative
+            input:checked+label
+                border: 1px solid $color__sub--blue
+            input:checked+label::after
+                position: absolute
+                right: 0
+                bottom: 0
+                content: ""
+                border-bottom: 7px solid $color__sub--blue
+                border-left: 7px solid transparent
+        &__label
+            font-size: 13px
+            display: block
+            min-width: 57px
+            text-align: center
+            margin: 0 0 0 10px
+            border: 1px solid $color__grayscale--light
+            padding: 1px 5px
+        .searchSet
+            display: none
+    .textwrap
+        display: block
+    .small
+        font-size: 9px
+    //順序下拉選單樣式
+    .product__selector
+        // display: none
+        padding: 0px 0 0 0
+        select
+            width: 100%
+            height: 38px
+    // 多選按鈕預設位置
+    .catalogBox
+        background-color: #ffffff
+        position: absolute
+        top: 100%
+        padding: 0 15px
+        left: 0px
+        // right: 0px
+        transition: .5s
+        max-height: 0px
+        overflow: hidden
+        z-index: 1000
+
+    .catalogBoxShow
+        max-height: 1200px
+        top: 10px
+
+    // 輪播圖樣式修改
+    // 手機版左右箭頭隱藏
+    .eventshow__button
+        display: none
+    // 圖片樣式修改
+    .evenshow_Carouselrow
+        width: 100%
+        +gridBox(1fr)
+    // 手機版單張活動圖片顯示
+    .PCnone
+        display: block
